@@ -1,0 +1,29 @@
+/*I believe that this is how i should have designed my index page. I will
+go ahead to apply changes so that it would be responsive.*/
+@font-face {
+    font-family: 'Roboto';
+    src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+}
+
+body {
+    font-family: 'Roboto';
+}
+
+header, main, footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border-style: 'faint';
+    padding: 1rem;
+    background-color:lightblue;
+}
+
+main {
+    display:grid;
+    grid-template-columns:1fr;
+    gap: 1rem;
+}
+
+section {
+    padding:2px;
+    background-color: white;
+}
