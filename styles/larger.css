@@ -14,7 +14,7 @@
         text-align: center ;
     }
 
-    .grid-container {
+    #grid-container {
         display: grid;
         grid-template-columns: 0.75fr auto;
         gap: 20px;

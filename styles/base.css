@@ -8,12 +8,9 @@ body {
   
 }
 
-.active a{
-    background-color: rgb(111, 65, 65);
+li.active a {
+    background-color: rgb(182, 95, 95);
 }
-
-
-
 
 
 .profile {
@@ -31,7 +28,7 @@ header nav {
     background-color: black;
 }
 
-ul a {
+nav a {
     display: block;
     text-align: center;
     align-items: center;
@@ -45,7 +42,7 @@ ul {
     list-style: none;
 }
 
-ul li {
+nav li {
     list-style: none;
     height:100%;
     
