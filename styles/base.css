@@ -1,0 +1,88 @@
+
+body {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    font-family: "Spectral", serif;
+    font-weight: 200;
+  
+}
+
+.active a{
+    background-color: rgb(111, 65, 65);
+}
+
+
+
+
+
+.profile {
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    background-color:rgb(46, 46, 119);
+    color:rgb(226, 229, 232);
+    padding:10px;
+    
+}
+
+
+header nav {
+    background-color: black;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    align-items: center;
+    background-color: black;
+    color:rgb(226, 229, 232);
+    text-decoration: none;
+    
+}
+
+ul {
+    list-style: none;
+}
+
+nav li {
+    list-style: none;
+    height:100%;
+    
+}
+
+
+.card {
+    border: 1px lightgray solid;
+    border-radius: 10px;
+    background-color: rgb(226, 229, 232);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 10px;
+    
+}
+
+.full-width {
+    text-align: center ;
+}
+
+section h2 {
+    background-color: rgb(47, 65, 113);
+    display: flex;
+    justify-content: center;
+    color:rgb(226, 229, 232);
+    font-weight: 100;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 0;
+}
+
+
+footer {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgb(46, 46, 119);
+    color: rgb(226, 229,232);
+    width: 100%;
+}

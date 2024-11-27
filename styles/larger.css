@@ -1,0 +1,28 @@
+@media (min-width: 768px){
+
+    header nav {
+        display: grid;  
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    }
+    
+   
+
+    .full-width {
+        display: grid;
+        grid-column: 1/-1;
+        text-align: center ;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 0.75fr auto;
+        gap: 20px;
+        
+    }
+    
+
+
+}   
+
+
