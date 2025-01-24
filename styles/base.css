@@ -16,12 +16,22 @@ body {
 .profile {
     display: flex;
     justify-content: center;
-    gap:10px;
+    gap:20px;
     background-color:rgb(46, 46, 119);
     color:rgb(226, 229, 232);
     padding:10px;
     margin:0px;
     
+}
+
+.card img {
+    width:100%;
+}
+
+.profile p {
+    font-weight: bold;
+    font-size: x-large;
+    font: 700;
 }
 
 
@@ -40,12 +50,13 @@ nav a {
 }
 
 
+
 ul {
-    list-style: none;
+    /*list-style: none;*/
 }
 
 nav li {
-    list-style: none;
+    /*list-style: none;*/
     height:100%;
     
 }
@@ -59,6 +70,7 @@ nav li {
     margin-bottom: 10px;
     
 }
+
 
 
 

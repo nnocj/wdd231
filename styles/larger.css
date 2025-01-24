@@ -12,12 +12,30 @@
         text-align: center ;
     }
 
+    .profile {
+        gap: 40px;
+    }
+
+    .profile p {
+        font-weight: bold;
+        font-size: xx-large;
+        size: 200px;
+        font: 700;
+    }
+
     #grid-container {
         display: grid;
         grid-template-columns: 0.75fr auto;
         gap: 20px;        
     }
 
+     .larger {
+        width: 100rem;  
+    }
+
+    .card .smaller {
+        width: 20%;
+    }
 }   
 
 
