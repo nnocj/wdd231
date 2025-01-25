@@ -13,12 +13,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
 <body>
     <header>
-        <div class="profile"><img src="images/my-profile.webp" alt="A Profile Picture" width="90" height="100">
-        <p>Nicholas O. Commey</p></div>
-        <nav>
+        <div class="profile">
+            <button type="button" id="menu" aria-label="Toggle navigation"></button>
+            <img src="images/my-profile.webp" alt="A Profile Picture" width="90" height="100">
+            <p>Nicholas O. Commey</p>
+        </div>
+        <nav class="head-nav">
           <a href="#" class="active">Home</a>
           <a href="#">Chamber</a>
           <a href="https://github.com/nnocj">GitHub Profile</a>
@@ -27,7 +31,6 @@
 
     </header>
     <main>
-        <h1 class="full-width">WDD 230: Web Frontend Development</h1>
         <div id="grid-container"><section class="card larger">
             <h2>Course Work</h2>
             <ul>
@@ -38,12 +41,29 @@
         </section>
         <section class="card smaller">
             <h2>Accra, Ghana</h2>
-           <img src="images/accra.webp" alt="Area Photo Shot of Accra" >
+           <img src="images/accra.webp" alt="Area Photo Shot of Accra">
         </section>
     </div>
+    <section class="course-card card">
+        <h2>Web and Computer Programming Certificate</h2>
+        <div class="course-nav">
+          <p href="#">All</p>
+          <p href="#">CSE</p>
+          <p href="#">WDD</p>
+        </div>
+        <div class="course-content">
+            <p href="#">CSE110</p>
+            <p href="#">WDD130</p>
+            <p href="#">CSE111</p>
+            <p href="#" id="white-bg">CSE210</p>
+            <p href="#">WDD131</p>
+            <p href="#" id="white-bg">WDD231</p>  
+        </div>
+
+    </section>
     </main>
     <footer>
-        <p>©<span id="year"></span> 🌐  Nicholas Oblitey Commey 🌐 Ghana <img src="images/ghana-flag.webp" alt="A small picture of the Ghana flag" width="20" height="15"></p>
+        <p>©<span id="year"></span> 🧩  Nicholas Oblitey Commey 🧩 Ghana <img src="images/ghana-flag.webp" alt="A small picture of the Ghana flag" width="20" height="15"></p>
         <p>Last modification: <span id="lastModified"></span></p>
     </footer>
 </body>

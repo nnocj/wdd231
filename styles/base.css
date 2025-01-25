@@ -1,39 +1,51 @@
+* {
+    box-sizing: border-box;
+  }
 
 body {
-    display: grid;
-    min-height: 100vh;
-    grid-template-rows: auto 1fr auto;
-    font-family: "Spectral", serif;
-    font-weight: 200;
-  
-}
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+  }
 
-.active  {
-    background-color: rgb(68, 14, 14);
+.head-nav .active {
+    color: rgb(185, 158, 24);
+  
 }
 
 
 .profile {
     display: flex;
-    justify-content: center;
+    justify-content:left;
     gap:20px;
-    background-color:rgb(46, 46, 119);
-    color:rgb(226, 229, 232);
+    background-color:rgb(219, 225, 229);
+    color:rgb(2, 20, 13);
     padding:10px;
     margin:0px;
     
 }
 
-.card img {
-    width:100%;
+
+.smaller img {
+    width: 100%;
+    padding: 10px 30px;
+   
 }
 
 .profile p {
     font-weight: bold;
     font-size: x-large;
     font: 700;
+    margin: 0;
+    align-self: center;
 }
 
+.profile img {
+    border-radius: 50%;
+    border: 2px rgb(8, 47, 33) solid;
+}
 
 nav ul{
     background-color: black;
@@ -49,28 +61,111 @@ nav a {
     
 }
 
-
-
-
-
 nav li {
     /*list-style: none;*/
     height:100%;
     
 }
 
+#menu {
+    position: absolute;
+    font-size: 2em;
+    color: rgb(8, 47, 33);
+    background-color: rgb(219, 225, 229);
+    top: 0;
+    right: 1rem;
+    padding: 0;
+    border:none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+#menu::before {
+    content: '☰';
+ }
+ 
+ #menu.open::before {
+     content: 'X';
+ }
+ 
+ 
+ .head-nav.open {
+     display:flex;
+     flex-direction: column;
+     list-style: none;
+ }
+ 
+ /*To ensure that on small screens, the navigation will only show when
+ the hamburger button is open navigation.*/
+ .head-nav.open {
+     display:flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     font-size: large;
+     list-style: none;
+ }
+ 
+ .head-nav{
+     display: none;
+     background-color: black;
+ }
+ .head-nav a {
+    background-color: black;
+    color: rgb(219, 225, 229);
+ }
 
 .card {
-    border: 1px lightgray solid;
+    border: none;
     border-radius: 10px;
-    background-color: rgb(226, 229, 232);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    background-color: rgb(255, 255, 255);
     margin-bottom: 10px;
     
 }
 
+.course-nav {
+    display: grid;
+    justify-self: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.course-nav p {
+    background-color: black;
+    color: beige;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+
+.course-content {
+    border-top-color: antiquewhite;
+    display: block;
+   
+    /* *justify-self: center;*/ 
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 5px;
+
+}
 
 
+.course-content p {
+    background-color: brown;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    font-size: medium;
+    
+}
+
+.course-content #white-bg {
+    background-color: rgb(159, 183, 199)
+}
 
 .full-width {
     text-align: center;
@@ -78,23 +173,33 @@ nav li {
 }
 
 section h2 {
-    background-color: rgb(47, 65, 113);
+    background-color: rgb(8, 47, 33);
     display: flex;
     justify-content: center;
     color:rgb(226, 229, 232);
-    font-weight: 100;
+    font-size: large;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     margin: 0;
+    padding: 5px;
+    text-align: center;
+    
 }
 
+main {
+    margin: 20px;
+}
 
 footer {
     display:flex;
     flex-direction: column;
     text-align: center;
-    padding: 10px 0;
-    background-color: rgb(46, 46, 119);
-    color: rgb(226, 229,232);
-    width: 100%;
+    padding: 5px 20px;
+    background-color: rgb(219, 225, 229);
+    color: rgb(2, 20, 13);
+    max-width: 100%;
+    font-size: medium;
+    text-align: center;
 }
+
+
