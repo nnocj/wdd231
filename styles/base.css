@@ -132,7 +132,7 @@ nav li {
     gap: 10px;
 }
 
-.course-nav p {
+.course-nav button {
     background-color: black;
     color: beige;
     text-align: center;
@@ -153,8 +153,8 @@ nav li {
 }
 
 
-.course-content p {
-    background-color: brown;
+.course-content .completed {
+    background-color:rgb(38, 92, 129);
     color: white;
     border-radius: 5px;
     text-align: center;
@@ -163,8 +163,13 @@ nav li {
     
 }
 
-.course-content .white-bg {
-    background-color: rgb(38, 92, 129)
+.course-content .uncompleted {
+    background-color: brown;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    font-size: medium;
 }
 
 .full-width {
