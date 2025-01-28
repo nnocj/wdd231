@@ -104,9 +104,15 @@ function renderCourses(filteredCourses) {
     courseContent.innerHTML = ''; // Clear previous content
     filteredCourses.forEach(course => {
         const classAttribute = course.completed ? 'completed' : 'uncompleted';
+        if (course.completed){
+            completedSymbol = '✔';
+        }
+        else {
+            completedSymbol = '';
+        }
+        
         const courseInfo = `
-            <p class="${classAttribute}">✔ ${course.subject}${course.number}: ${course.title}</p>
-        `;
+            <p class="${classAttribute}"> ${completedSymbol} ${course.subject}${course.number}: ${course.title}</p>`;
         courseContent.innerHTML += courseInfo; // Append content
     });
 }
@@ -115,7 +121,6 @@ function renderCourses(filteredCourses) {
 viewAll.addEventListener('click', () => {
     renderCourses(courses);
 });
-
 // View only CSE courses
 onlyCse.addEventListener('click', () => {
     const filteredCourses = courses.filter(course => course.subject === 'CSE');
