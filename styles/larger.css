@@ -64,7 +64,7 @@
     /*To ensure that even when the user do not close the hamburger button,
     it the navigation content will flex horizontally when the screen is large*/
     .head-nav.open {
-        display:grid;
+        display: grid;
       
     }
 }   
