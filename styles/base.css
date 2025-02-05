@@ -208,4 +208,7 @@ footer {
     text-align: center;
 }
 
-
+.course-count {
+    display: flex;
+    justify-self: center;
+}

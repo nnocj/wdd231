@@ -102,6 +102,8 @@ const onlyWdd = document.querySelector('#only-wdd');
 // Helper function to render courses
 function renderCourses(filteredCourses) {
     courseContent.innerHTML = ''; // Clear previous content
+    const courseCount = document.querySelector('.course-count');
+    courseCount.textContent = `The total number of course listed below is ${filteredCourses.length}`
     filteredCourses.forEach(course => {
         const classAttribute = course.completed ? 'completed' : 'uncompleted';
         if (course.completed){
@@ -135,3 +137,4 @@ onlyWdd.addEventListener('click', () => {
 
 //setting all to default
 renderCourses(courses);
+
