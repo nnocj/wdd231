@@ -31,7 +31,7 @@ const displayProphets = (prophets)=> {
         else {
             suffix = 'th'
         }
-        portrait.setAttribute('alt', `Portrait ${prophet.name} ${prophet.lastname}. ${prophet.order}${suffix} President of the Church`);
+        portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname}. ${prophet.order}${suffix} President of the Church`);
         portrait.setAttribute('loading', 'lazy');
         //portrait.setAttribute('width', '340');
         //portrait.setAttribute('height', '440');
