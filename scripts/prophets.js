@@ -18,17 +18,17 @@ const displayProphets = (prophets)=> {
     
         
         let suffix = '';
-        if (prophet.order == 1 || prophet.order % 10 == 1) {
+        if ((prophet.order == 1) || ((prophet.order % 10 == 1) && (prophet.order > 20))) {
             suffix = 'st'
         }
-        else if (prophet.order == 2 || prophet.order % 10 == 2){
+        else if ((prophet.order == 2) || ((prophet.order % 10 == 2) && (prophet.order > 20))){
             suffix = 'nd'
         }
-        else if (prophet.order == 3 || prophet.order % 10 == 3){
+        else if ((prophet.order == 3) || ((prophet.order % 10 == 3) && (prophet.order > 20))){
             suffix = 'rd'
         }
 
-        else{
+        else {
             suffix = 'th'
         }
         portrait.setAttribute('alt', `Portrait ${prophet.name} ${prophet.lastname}. ${prophet.order}${suffix} President of the Church`);
