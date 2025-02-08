@@ -40,7 +40,10 @@
     background-color:rgb(219, 225, 229);
     text-align: center;
   }
-  
+  section h2 {
+    padding-top: 10px;
+  }
+
   section h2, h1 {
     color: rgb(36, 92, 129);
   }
@@ -64,6 +67,10 @@
     section {
         display: flex;
     }
+    section h2 {
+        padding-top: 0;
+      }
+
     #cards {
        display: grid;
        grid-template-columns: repeat(2, 0.5fr);
