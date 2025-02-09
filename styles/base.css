@@ -91,7 +91,7 @@ nav li {
  }
  
  #menu.open::before {
-     content: 'x';
+     content: ' X';
      font-family:Arial, Helvetica, sans-serif;
  }
  
