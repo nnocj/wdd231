@@ -82,6 +82,10 @@ nav li {
    
 }
 
+#menu {
+    cursor: pointer;
+}
+
 #menu::before {
     content: '☰';
  }
