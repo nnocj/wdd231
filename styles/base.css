@@ -91,7 +91,7 @@ nav li {
  }
  
  #menu.open::before {
-     content: 'X';
+     content: 'x';
  }
  
  
