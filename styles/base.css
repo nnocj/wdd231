@@ -11,8 +11,7 @@ body {
   }
 
 .head-nav .active {
-    color: rgb(185, 158, 24);
-  
+    color: rgb(185, 158, 24); 
 }
 
 
@@ -219,10 +218,10 @@ footer {
 }
 
 
-#animateme {
+#animateme, .head-nav {
     display: grid;
     grid-template-rows: 0fr; 
-    transition: grid-template-rows 0.5s ease-out;
+    transition: grid-template-rows 0.5s ease-in-out;
     overflow: hidden;
 }
 

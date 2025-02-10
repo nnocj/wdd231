@@ -67,6 +67,10 @@
         display: grid;
       
     }
+
+    #animateme {
+        grid-template-rows: 1fr;
+    }
 }   
 
 
