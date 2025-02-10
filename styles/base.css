@@ -217,3 +217,19 @@ footer {
     display: flex;
     justify-self: center;
 }
+
+
+#animateme {
+    display: grid;
+    grid-template-rows: 0fr; 
+    transition: grid-template-rows 0.5s ease-out;
+    overflow: hidden;
+}
+
+#animateme.open {
+    grid-template-rows: 1fr; /*Expands smoothly*/
+}
+
+.head-nav {
+    overflow: hidden;
+}

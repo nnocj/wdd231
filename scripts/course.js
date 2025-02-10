@@ -3,12 +3,14 @@ Here we have a function that takes in charge of filtering and another for render
 
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.head-nav');
+const animateMe = document.getElementById("animateme");
 const headerTitle = document.querySelector('.header-h1');
 
 // Hamburger menu logic
 hamButton.addEventListener('click', () => {
     navigation.classList.toggle('open');
     hamButton.classList.toggle('open');
+    animateMe.classList.toggle("open");
     headerTitle.classList.toggle('hide'); // Hide the title when the hamburger is open
 });
 
