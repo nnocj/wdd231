@@ -11,7 +11,7 @@ body {
   }
 
 .head-nav .active {
-    color: rgb(185, 158, 24); 
+    text-decoration: underline;
 }
 
 
@@ -39,9 +39,8 @@ header {
 }
 
 .page-profile p {
-    font-weight: bold;
-    font-size: medium;
-    font: 700;
+
+    font-size: small;
     margin: 0;
     align-self: center;
 }
@@ -51,16 +50,16 @@ header {
     border: 2px rgb(8, 47, 33) solid;
 }
 
-nav ul{
-    background-color: black;
+.head-nav ul{
+    background-color:rgb(219, 225, 229);
 }
 
-nav a {
+.head-nav a {
     display: block;
     text-align: center;
     align-items: center;
-    background-color: black;
-    color:rgb(226, 229, 232);
+    background-color:rgb(219, 225, 229);
+    color:rgb(2, 20, 13);
     text-decoration: none;
     
 }
@@ -119,14 +118,31 @@ nav li {
  
  .head-nav{
      display: none;
-     background-color: black;
+     background-color:rgb(2, 20, 13);
  }
 
- .head-nav a {
-    background-color: black;
-    color: rgb(219, 225, 229);
+ .head-nav a, #search-button {
+    color:rgb(219, 225, 229);
+    background-color:rgb(2, 20, 13);
+    border-style: hidden;
+    
  }
 
+ #search-button, .search-button {
+    cursor: pointer;
+    fill: rgb(2, 20, 13);
+
+ }
+
+
+
+ .head-nav a:hover, #search-button:hover {
+    color:rgb(24, 91, 186);
+ }
+
+#hero-image {
+    width: 100%;
+}
 .card {
     border: none;
     border-radius: 10px;
@@ -201,9 +217,9 @@ section h2 {
     
 }
 
-main {
+/*main {
     margin: 20px;
-}
+}*/
 
 footer {
     display:flex;
@@ -228,6 +244,7 @@ footer {
     grid-template-rows: 0fr; 
     transition: grid-template-rows 0.5s ease-in-out;
     overflow: hidden;
+
 }
 
 #animateme.open {
@@ -238,20 +255,47 @@ footer {
     overflow: hidden;
 }
 
+#vertical-align h1{
+    display: flex;
+    justify-self: stretch;
+    margin: 0;
+    padding: 0;
+    font-size: 3rem;
+}
+
+#vertical-align p {
+    font-size: 1rem;
+}
+
+#vertical-align {
+    align-self:flex-end;
+}
 
 @media (min-width:748px){
 
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: rgb(219, 225, 229); 
+        padding: 10px 40px;
+    }
+
     nav {
         display: grid;  
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        align-self: self-end;
     }
     
     .head-nav {
         display:grid;
-       
-    }
+        background-color: rgb(219, 225, 229);
 
+    }
+   
+    .head-nav a, #search-button {
+       background-color:rgb(219, 225, 229);
+       color:rgb(2, 20, 13);
+    }
     #menu {
         display:none; /*hide burger*/
     }
@@ -265,5 +309,10 @@ footer {
 
     #animateme {
         grid-template-rows: 1fr;
+    }
+
+    .head-nav .active {
+        color: rgb(24, 91, 186);
+        text-decoration: underline;
     }
 }   
