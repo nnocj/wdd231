@@ -214,6 +214,10 @@ section h2 {
     margin: 20px;
 }*/
 
+.member-cards section {
+    
+}
+
 footer {
     display:flex;
     flex-direction: column;

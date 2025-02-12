@@ -12,6 +12,8 @@ const displayMembers = (members)=> {
         logo.setAttribute('alt', `${member.name} logo`);
         logo.setAttribute('src', member.image_file_name);
         logo.setAttribute('loading', 'lazy');
+        address.textContent = member.address;
+        link.textContent = member.website_url;
 
         card.appendChild(logo);
         card.appendChild(address);
