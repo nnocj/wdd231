@@ -21,6 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <script src="scripts/directory.js" defer></script>
     <script src="../scripts/getdates.js" defer></script>
+    <script src="../scripts/course.js" defer></script>
     
 </head>
 <body>
@@ -52,10 +53,10 @@
         </section>
         
         <section class="members">
-            <h2>Businesses in Accra</h2>
+            <h2>Learn More About Our Chamber Members in Accra</h2>
             <div class="view-nav">
-              <button id="view-grid">⏹</button>
-              <button id="view-list">📄</button>
+              <button id="view-grid" onclick="setGridView()">⏹</button>
+              <button id="view-list" onclick="setBlockView()">📄</button>
             </div>
             <div class="member-cards">
                

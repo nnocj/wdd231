@@ -159,15 +159,28 @@ nav li {
     margin-top: 10px;
 }
 
+.view-nav button:hover {
+    background-color:rgb(24, 91, 186);
+}
 
+.view-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}
+
+/*.view-list {
+    display: block
+}*/
 
 .member-cards {
     border-top: 1px solid rgb(207, 221, 232);
-    display: block;
+    /*display: block;*/
     /*justify-self: center;*/ 
     flex-wrap: wrap;
-    flex-direction: column;
-    margin: 5px;
+    flex-direction: column; 
+    margin: 5px 30px;
+
 
 }
 
@@ -215,7 +228,20 @@ section h2 {
 }*/
 
 .member-cards section {
-    
+    display: block;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    border: 1px light rgb(2, 20, 13);
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 10px gray;
+    padding:10px;
+
+}
+
+section img {
+    width:100px;
 }
 
 footer {
@@ -280,6 +306,26 @@ footer {
 
 #vertical-align {
     align-self:flex-end;
+}
+
+/* Default Flex Container */
+.member-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Block Layout */
+.block {
+    display: block;
 }
 
 @media (min-width:748px){

@@ -33,3 +33,11 @@ async function getMembersData() {
 }
 
 getMembersData();
+
+function setGridView() {
+    document.querySelector(".member-cards").className = "member-cards grid";
+}
+
+function setBlockView() {
+    document.querySelector(".member-cards").className = "member-cards block";
+}
