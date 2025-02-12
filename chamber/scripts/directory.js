@@ -10,7 +10,7 @@ const displayMembers = (members)=> {
         let link = document.createElement('p');
         
         logo.setAttribute('alt', `${member.name} logo`);
-        logo.setAttribute('src', member.image_url);
+        logo.setAttribute('src', member.image_file_name;
         logo.setAttribute('loading', 'lazy');
 
         card.appendChild(logo);
