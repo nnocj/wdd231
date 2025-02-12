@@ -85,6 +85,20 @@ nav li {
    
 }
 
+#search-button-small-screen {
+        position: absolute;
+        font-size: 1.5em;
+        color: rgb(8, 47, 33);
+        background-color: rgb(219, 225, 229);
+        top: 70px;
+        right: 1rem;
+        padding: 0;
+        border:none;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
 #menu {
     cursor: pointer;
 }
@@ -139,6 +153,10 @@ nav li {
  .head-nav a:hover, #search-button:hover {
     color:rgb(24, 91, 186);
  }
+
+.head-nav button {
+    display: none;
+}
 
 #hero-image {
     width: 100%;
@@ -348,13 +366,22 @@ footer {
         background-color: rgb(219, 225, 229);
 
     }
-   
+    
+    #search-button {
+        display:flex;
+        font-size: 1rem;
+           }
+    
     .head-nav a, #search-button {
        background-color:rgb(219, 225, 229);
        color:rgb(2, 20, 13);
     }
     #menu {
         display:none; /*hide burger*/
+    }
+
+    #search-button-small-screen {
+        display: none;
     }
 
     /*To ensure that even when the user do not close the hamburger button,
