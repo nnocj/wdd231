@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Accra Chamber of Commerce</title>
+    <title> Accra Chamber of Commerce - Directory Page</title>
     <meta name="description" content="Accra Chamber of Commerce Directory Page">
     <meta name="author" content="Nicholas Oblitey Commey">
     <meta property="og:url"   content="https://nnocj.github.io/wdd231/chamber/directory.html" />
@@ -19,9 +19,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" href="favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-    <script src="../scripts/getdates.js" defer></script>
-    <script src="../scripts/course.js" defer></script>
     <script src="scripts/directory.js" defer></script>
+    <script src="../scripts/getdates.js" defer></script>
+    
 </head>
 <body>
     <header>
@@ -29,7 +29,7 @@
             <button type="button" id="menu" aria-label="Toggle navigation"></button>
             <img src="../images/accra.webp" alt="A Profile Picture" width="90" height="100">
             <div id="vertical-align">
-                <h1>Accra</h1>
+                <p id="large-font">Accra</p>
                 <p>Chamber of Commerce</p>
             </div>
         </div>
@@ -46,16 +46,18 @@
 
     </header>
     <main>
-        <img id="hero-image" src="images/directory-hero.webp" alt="Area view of some part of accra with two locators">
-        <section class="sf">
-            <h2>Web and Computer Programming Certificate</h2>
-            <div class="course-nav">
-              <button id="view-all">All</button>
-              <button id="only-cse">CSE</button>
-              <button id="only-wdd">WDD</button>
+        <section class="hero-section">
+            <img id="hero-image" src="images/directory-hero.webp" alt="Area view of some part of accra with two locators">
+            <h1>Accra Chamber of Commerce - Directory Page</h1>
+        </section>
+        
+        <section class="members">
+            <h2>Businesses in Accra</h2>
+            <div class="view-nav">
+              <button id="view-grid">⏹</button>
+              <button id="view-list">📄</button>
             </div>
-            <p class="course-count"></p> 
-            <div class="course-content">
+            <div class="member-cards">
                
             </div>
            

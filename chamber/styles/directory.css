@@ -151,24 +151,17 @@ nav li {
     
 }
 
-.course-nav {
+.view-nav {
     display: grid;
     justify-self: center;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 10px;
     margin-top: 10px;
 }
 
-.course-nav button {
-    background-color: black;
-    color: beige;
-    text-align: center;
-    padding: 5px;
-    border-radius: 5px;
 
-}
 
-.course-content {
+.member-cards {
     border-top: 1px solid rgb(207, 221, 232);
     display: block;
     /*justify-self: center;*/ 
@@ -255,7 +248,7 @@ footer {
     overflow: hidden;
 }
 
-#vertical-align h1{
+#large-font{
     display: flex;
     justify-self: stretch;
     margin: 0;
@@ -263,8 +256,22 @@ footer {
     font-size: 3rem;
 }
 
+.hero-section h1{
+    display: none;
+   visibility: hidden;
+}
+.members {
+    margin: 20px;
+}
+
+
 #vertical-align p {
     font-size: 1rem;
+}
+
+#vertical-align #large-font {
+    font-size: 3rem;
+    font-weight: 500;
 }
 
 #vertical-align {
