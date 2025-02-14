@@ -1,35 +1,38 @@
 const url = 'https://nnocj.github.io/wdd231/chamber/data/members.json';
-const cards = document.querySelector('.member-cards');
+const businessCards = document.querySelector('.business-cards');
 
-
-const displayMembers = (members)=> {
+const displayFilteredMembers = (members)=> {
     members.forEach((member) => {
-        let card = document.createElement('section');
-        let logo = document.createElement('img');
-        let address = document.createElement('p');
-        let link = document.createElement('p');
-        
-        logo.setAttribute('alt', `${member.name} logo`);
-        logo.setAttribute('src', member.image_file_name);
-        logo.setAttribute('loading', 'lazy');
-        address.textContent = member.address;
-        link.textContent = member.website_url;
 
-        card.appendChild(logo);
-        card.appendChild(address);
-        card.appendChild(link);
-
-        cards.appendChild(card);
+        if (member.membership_level == 3){
+            let card = document.createElement('section');
+            let logo = document.createElement('img');
+            let address = document.createElement('p');
+            let link = document.createElement('p');
+            
+            logo.setAttribute('alt', `${member.name} logo`);
+            logo.setAttribute('src', member.image_file_name);
+            logo.setAttribute('loading', 'lazy');
+            address.textContent = member.address;
+            link.textContent = member.website_url;
+    
+            card.appendChild(logo);
+            card.appendChild(address);
+            card.appendChild(link);
+            card.setAttribute('class', 'each-business');
+    
+            businessCards.appendChild(card);
+        }
+       
     
     });
 }
-
 
 async function getMembersData() {
     const response = await fetch(url);
     const data = await response.json();
     // console.table(data.prophets);
-    displayMembers(data.members)
+    displayFilteredMembers(data.members)
 }
 
 getMembersData();
@@ -50,3 +53,5 @@ document.getElementById("search-button-small-screen").addEventListener("click", 
 document.getElementById("search-button").addEventListener("click", function() {
     document.querySelector(".members").scrollIntoView({ behavior: "smooth" });
 });
+
+//display weather info
