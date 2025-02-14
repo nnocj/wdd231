@@ -1,0 +1,402 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+.head-nav .active {
+    text-decoration: underline;
+}
+
+
+.page-profile {
+    display: flex;
+    justify-content:left;
+    gap:20px;
+    background-color:rgb(219, 225, 229);
+    color:rgb(2, 20, 13);
+    padding:10px;
+    margin:0px;
+    
+}
+
+
+.smaller img {
+    width: 100%;
+    padding: 10px 30px;
+   
+}
+
+header {
+    display: block;
+   
+}
+
+.page-profile p {
+
+    font-size: small;
+    margin: 0;
+    align-self: center;
+}
+
+.profile img {
+    border-radius: 50%;
+    border: 2px rgb(8, 47, 33) solid;
+}
+
+.head-nav ul{
+    background-color:rgb(219, 225, 229);
+}
+
+.head-nav a {
+    display: block;
+    text-align: center;
+    align-items: center;
+    background-color:rgb(219, 225, 229);
+    color:rgb(2, 20, 13);
+    text-decoration: none;
+    
+}
+
+nav li {
+    /*list-style: none;*/
+    height:100%;
+    
+}
+
+#menu {
+    position: absolute;
+    font-size: 2em;
+    color: rgb(8, 47, 33);
+    background-color: rgb(219, 225, 229);
+    top: 0;
+    right: 1rem;
+    padding: 0;
+    border:none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+#search-button-small-screen {
+        position: absolute;
+        font-size: 1.5em;
+        color: rgb(8, 47, 33);
+        background-color: rgb(219, 225, 229);
+        top: 70px;
+        right: 1rem;
+        padding: 0;
+        border:none;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+#menu {
+    cursor: pointer;
+}
+
+#menu::before {
+    content: '☰';
+ }
+ 
+ #menu.open::before {
+     content: ' x';
+     font-family:Arial, Helvetica, sans-serif;
+ }
+ 
+ 
+ .head-nav.open {
+     display:flex;
+     flex-direction: column;
+     list-style: none;
+ }
+ 
+ /*To ensure that on small screens, the navigation will only show when
+ the hamburger button is open navigation.*/
+ .head-nav.open {
+     display:flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     font-size: large;
+     list-style: none;
+ }
+ 
+ .head-nav{
+     display: none;
+     background-color:rgb(2, 20, 13);
+ }
+
+ .head-nav a, #search-button {
+    color:rgb(219, 225, 229);
+    background-color:rgb(2, 20, 13);
+    border-style: hidden;
+    
+ }
+
+ #search-button, .search-button {
+    cursor: pointer;
+    fill: rgb(2, 20, 13);
+
+ }
+
+
+
+ .head-nav a:hover, #search-button:hover {
+    color:rgb(24, 91, 186);
+ }
+
+.head-nav button {
+    display: none;
+}
+
+#hero-image {
+    width: 100%;
+}
+.card {
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    
+}
+
+.view-nav {
+    display: grid;
+    justify-self: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.view-nav button:hover {
+    background-color:rgb(24, 91, 186);
+}
+
+.view-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}
+
+/*.view-list {
+    display: block
+}*/
+
+.member-cards {
+    border-top: 1px solid rgb(207, 221, 232);
+    /*display: block;*/
+    /*justify-self: center;*/ 
+    flex-wrap: wrap;
+    flex-direction: column; 
+    margin: 5px 30px;
+
+
+}
+
+
+.course-content .completed {
+    background-color:rgb(38, 92, 129);
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    font-size: medium;
+    
+}
+
+.course-content .uncompleted {
+    background-color: brown;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    font-size: medium;
+}
+
+.full-width {
+    text-align: center;
+    margin: 0;
+}
+
+section h2 {
+    background-color: rgb(8, 47, 33);
+    display: flex;
+    justify-content: center;
+    color:rgb(226, 229, 232);
+    font-size: large;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+    
+}
+
+/*main {
+    margin: 20px;
+}*/
+
+.member-cards section {
+    display: block;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    border: 1px  rgb(2, 20, 13);
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 10px gray;
+    padding:10px;
+
+}
+
+section img {
+    width:100px;
+}
+
+footer {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5px 20px;
+    background-color: rgb(219, 225, 229);
+    color: rgb(2, 20, 13);
+    max-width: 100%;
+    font-size: medium;
+    text-align: center;
+}
+
+.course-count {
+    display: flex;
+    justify-self: center;
+}
+
+
+#animateme, .head-nav {
+    display: grid;
+    grid-template-rows: 0fr; 
+    transition: grid-template-rows 0.5s ease-in-out;
+    overflow: hidden;
+
+}
+
+#animateme.open {
+    grid-template-rows: 1fr; /*Expands smoothly*/
+}
+
+.head-nav {
+    overflow: hidden;
+}
+
+#large-font{
+    display: flex;
+    justify-self: stretch;
+    margin: 0;
+    padding: 0;
+    font-size: 3rem;
+}
+
+.hero-section h1{
+    display: none;
+   visibility: hidden;
+}
+.members {
+    margin: 20px;
+}
+
+
+#vertical-align p {
+    font-size: 1rem;
+}
+
+#vertical-align #large-font {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+#vertical-align {
+    align-self:flex-end;
+}
+
+/* Default Flex Container */
+.member-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Block Layout */
+.block {
+    display: block;
+}
+
+@media (min-width:748px){
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: rgb(219, 225, 229); 
+        padding: 10px 40px;
+    }
+
+    nav {
+        display: grid;  
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        align-self: self-end;
+    }
+    
+    .head-nav {
+        display:grid;
+        background-color: rgb(219, 225, 229);
+
+    }
+    
+    #search-button {
+        display:flex;
+        font-size: 1rem;
+           }
+    
+    .head-nav a, #search-button {
+       background-color:rgb(219, 225, 229);
+       color:rgb(2, 20, 13);
+    }
+    #menu {
+        display:none; /*hide burger*/
+    }
+
+    #search-button-small-screen {
+        display: none;
+    }
+
+    /*To ensure that even when the user do not close the hamburger button,
+    it the navigation content will flex horizontally when the screen is large*/
+    .head-nav.open {
+        display: grid;
+      
+    }
+
+    #animateme {
+        grid-template-rows: 1fr;
+    }
+
+    .head-nav .active {
+        color: rgb(24, 91, 186);
+        text-decoration: underline;
+    }
+}   
