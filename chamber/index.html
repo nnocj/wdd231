@@ -21,7 +21,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <script src="scripts/index.js" defer></script>
     <script src="../scripts/getdates.js" defer></script>
-    <script src="../scripts/course.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <!--<script src="../scripts/course.js" defer></script>-->
     
 </head>
 <body>
@@ -29,7 +30,7 @@
         <div class="page-profile">
             <button type="button" id="menu" aria-label="Toggle navigation"></button>
             <button id="search-button-small-screen">🔍</button>
-            <img src="../images/accra.webp" alt="A Profile Picture" width="90" height="100">
+            <img src="../images/accra.webp" alt="A Profile Picture" width="45" height="50">
             <div id="vertical-align">
                 <p id="large-font">Accra</p>
                 <p>Chamber of Commerce</p>
@@ -51,19 +52,26 @@
         <section class="hero-section">
             <img id="hero-image" src="images/home-hero.jpeg" alt="Area view of some part of accra in a fast pace">
             <h1>Accra Chamber of Commerce - Directory Page</h1>
+           <!-- <button>Join Community</button>-->
         </section>
         
-        <section class="members">
-            <h2>Learn More About Our Chamber Members in Accra</h2>
-            <div class="view-nav">
-              <button id="view-grid" onclick="setGridView()">⏹</button>
-              <button id="view-list" onclick="setBlockView()">📄</button>
+        <section class="info-cards">
+            <div>
+                <h2>Events</h2>
             </div>
-            <div class="member-cards">
-               
+            <div>
+                <h2>Current Weather</h2>
+                <section id="weather-content">
+
+                </section>
             </div>
-           
+            <div>
+                <h2>Weather Forecast</h2>
+            </div>
     
+        </section>
+        <section class="business-cards">
+
         </section>
        
 

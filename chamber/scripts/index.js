@@ -45,13 +45,24 @@ function setBlockView() {
     document.querySelector(".member-cards").className = "member-cards block";
 }
 
-//skip to main content
-document.getElementById("search-button-small-screen").addEventListener("click", function() {
-    document.querySelector(".members").scrollIntoView({ behavior: "smooth" });
-});
+//when the page is scrolled down, the header should change to the settings I gave it.
+// But then when the page is up or not scrolled down, it should be transparent.
+window.addEventListener(('scroll'), () => {
+    let header = document.querySelector('header');
+    let logoText = document.querySelectorAll('#vertical-align');
+    let headNav = document.querySelector('.head-nav');
+    let headLinks = headNav.querySelectorAll('a');
+    if (window.scrollY > 5){
+        header.style.backgroundColor = 'rgb(219, 225,  229)';
+        header.style.color= 'rgb(2,20,13)';
+        logoText.style.color = 'rgb(2,20,13)';
+        headLinks.style.color= 'rgb(2,20,13)';
+    }
 
-document.getElementById("search-button").addEventListener("click", function() {
-    document.querySelector(".members").scrollIntoView({ behavior: "smooth" });
-});
-
-//display weather info
+    else {
+        header.style.backgroundColor = 'transparent';
+        header.style.color = 'rgb(219,224,229)';
+        logoText.style.color = 'rgb(219,224,229)';
+        headLinks.style.color = 'rgb(219,224,229)';
+    }
+})
