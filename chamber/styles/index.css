@@ -19,8 +19,9 @@ body {
     display: flex;
     justify-content:left;
     gap:20px;
-    background-color:rgb(219, 225, 229);
+    /*background-color:rgb(219, 225, 229);
     color:rgb(2, 20, 13);
+    color: rgb(219, 225, 229);*/
     padding:10px;
     margin:0px;
     
@@ -44,8 +45,8 @@ header {
     display: block;
     text-align: center;
     align-items: center;
-    background-color:rgb(219, 225, 229);
-    color:rgb(2, 20, 13);
+    /*background-color:rgb(219, 225, 229);
+    color:rgb(2, 20, 13);*/
     text-decoration: none;
     
 }
@@ -56,7 +57,7 @@ header {
 
 #vertical-align #large-font {
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 #vertical-align {
@@ -148,12 +149,12 @@ nav li {
  
  .head-nav{
      display: none;
-     background-color:rgb(2, 20, 13);
+     /*background-color:rgb(2, 20, 13);*/
  }
 
  .head-nav a, #search-button {
-    color:rgb(219, 225, 229);
-    background-color:rgb(2, 20, 13);
+    /*color:rgb(219, 225, 229);
+    background-color:rgb(2, 20, 13);*/
     border-style: hidden;
     
  }
@@ -416,7 +417,7 @@ footer {
     header {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        background-color: rgb(219, 225, 229); 
+       /* background-color: rgb(219, 225, 229); */
         padding: 10px 40px;
     }
 
@@ -428,15 +429,15 @@ footer {
     
     .head-nav {
         display:grid;
-        background-color: rgb(219, 225, 229);
+       /* background-color: rgb(219, 225, 229);*/
 
     }
     
     .head-nav a, .head-nav{
         background-color: transparent;
-        color:rgb(2, 20, 13);
+        /*color:rgb(2, 20, 13);*/
     }
-    
+
     #search-button {
         display:flex;
         font-size: 1rem;

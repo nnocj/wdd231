@@ -56,7 +56,6 @@ window.addEventListener(('scroll'), () => {
         header.style.backgroundColor = 'rgb(219, 225,  229)';
         header.style.color= 'rgb(2,20,13)';
         logoText.style.color = 'rgb(2,20,13)';
-        headLinks.style.color= 'rgb(2,20,13)';
     }
 
     else {
