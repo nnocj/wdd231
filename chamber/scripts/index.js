@@ -50,18 +50,19 @@ function setBlockView() {
 window.addEventListener(('scroll'), () => {
     let header = document.querySelector('header');
     let logoText = document.querySelectorAll('#vertical-align');
-    let headNav = document.querySelector('.head-nav');
-    let headLinks = headNav.querySelectorAll('a');
+    let headNav = document.querySelector('#head-nav');
     if (window.scrollY > 5){
         header.style.backgroundColor = 'rgb(219, 225,  229)';
         header.style.color= 'rgb(2,20,13)';
         logoText.style.color = 'rgb(2,20,13)';
+        headNav.style.color = 'rgb(2,20,13)'; // Example: Log the text of each link
+        
     }
 
     else {
         header.style.backgroundColor = 'transparent';
         header.style.color = 'rgb(219,224,229)';
         logoText.style.color = 'rgb(219,224,229)';
-        headLinks.style.color = 'rgb(219,224,229)';
+        headNav.style.color = 'rgb(219,224,229)'; // Example: Log the text of each link
     }
 })
