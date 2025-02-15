@@ -19,8 +19,8 @@ body {
     display: flex;
     justify-content:left;
     gap:20px;
-    background-color:rgb(219, 225, 229);
-    color:rgb(2, 20, 13);
+    /*background-color:rgb(219, 225, 229);
+    color:rgb(2, 20, 13);*/
     padding:10px;
     margin:0px;
     
@@ -35,7 +35,9 @@ body {
 
 header {
     display: block;
-   
+    position: fixed;
+    visibility:visible;
+    width:100%;
 }
 
 .page-profile p {
@@ -74,7 +76,7 @@ nav li {
     position: absolute;
     font-size: 2em;
     color: rgb(8, 47, 33);
-    background-color: rgb(219, 225, 229);
+    background-color: transparent;
     top: 0;
     right: 1rem;
     padding: 0;
@@ -89,8 +91,8 @@ nav li {
         position: absolute;
         font-size: 1.5em;
         color: rgb(8, 47, 33);
-        background-color: rgb(219, 225, 229);
-        top: 70px;
+        background-color: transparent;
+        top: 40px;
         right: 1rem;
         padding: 0;
         border:none;
@@ -132,12 +134,12 @@ nav li {
  
  .head-nav{
      display: none;
-     background-color:rgb(2, 20, 13);
+     /*background-color:rgb(2, 20, 13);*/
  }
 
  .head-nav a, #search-button {
-    color:rgb(219, 225, 229);
-    background-color:rgb(2, 20, 13);
+    /*color:rgb(219, 225, 229);
+    background-color:rgb(2, 20, 13);*/
     border-style: hidden;
     
  }
@@ -148,10 +150,8 @@ nav li {
 
  }
 
-
-
  .head-nav a:hover, #search-button:hover {
-    color:rgb(24, 91, 186);
+    color:rgba(2, 20, 13, 0.7)
  }
 
 .head-nav button {
@@ -296,14 +296,6 @@ footer {
     overflow: hidden;
 }
 
-#large-font{
-    display: flex;
-    justify-self: stretch;
-    margin: 0;
-    padding: 0;
-    font-size: 3rem;
-}
-
 .hero-section h1{
     display: none;
    visibility: hidden;
@@ -318,8 +310,8 @@ footer {
 }
 
 #vertical-align #large-font {
-    font-size: 3rem;
-    font-weight: 500;
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 #vertical-align {
@@ -346,12 +338,20 @@ footer {
     display: block;
 }
 
+header, .page-profile, .vertical-align, .head-nav, .head-nav a, #search-button,
+.search-button {
+    background: transparent;
+    background-color: transparent;
+} 
+
+
+
 @media (min-width:748px){
 
     header {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        background-color: rgb(219, 225, 229); 
+        /*background-color: rgb(219, 225, 229);*/
         padding: 10px 40px;
     }
 
@@ -363,7 +363,7 @@ footer {
     
     .head-nav {
         display:grid;
-        background-color: rgb(219, 225, 229);
+        /*background-color: rgb(219, 225, 229);*/
 
     }
     
@@ -372,10 +372,6 @@ footer {
         font-size: 1rem;
            }
     
-    .head-nav a, #search-button {
-       background-color:rgb(219, 225, 229);
-       color:rgb(2, 20, 13);
-    }
     #menu {
         display:none; /*hide burger*/
     }
@@ -396,7 +392,31 @@ footer {
     }
 
     .head-nav .active {
-        color: rgb(24, 91, 186);
         text-decoration: underline;
     }
+
+    header, .page-profile, .head-nav, .head-nav a, #search-button,
+    .search-button {
+        transition: background-color 0.3s ease;
+    } 
+
+    
+    #animateme {
+        display: block;
+        align-items:start;
+        padding-top: 30px;
+    }
+
 }   
+
+/*Ensuring that the nav is slightly transparent at all times on small screens*/
+@media (max-width: 747px) {
+    nav {
+      background-color: rgba(2, 20, 13,0.8) !important;
+      color: rgb(219, 225, 229) !important;
+    }
+  
+    nav a {
+      color: rgb(219, 225, 229) !important;
+    }
+  }

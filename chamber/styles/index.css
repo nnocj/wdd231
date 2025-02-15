@@ -13,7 +13,9 @@ body {
 .head-nav .active {
     text-decoration: underline;
 }
-
+.head-nav a:hover, #search-button:hover {
+    color:rgba(2, 20, 13, 0.7)
+ }
 
 .page-profile {
     display: flex;
@@ -45,8 +47,9 @@ header {
     display: block;
     text-align: center;
     align-items: center;
-    /*background-color:rgb(219, 225, 229);
-    color:rgb(2, 20, 13);*/
+    background-color:rgb(219, 225, 229);
+    color:rgb(2, 20, 13);
+    /*color: rgb(219, 225, 229);*/
     text-decoration: none;
     
 }
@@ -91,7 +94,7 @@ nav li {
     position: absolute;
     font-size: 2em;
     color: rgb(8, 47, 33);
-    background-color: rgb(219, 225, 229);
+    background-color: transparent;
     top: 0;
     right: 1rem;
     padding: 0;
@@ -106,7 +109,7 @@ nav li {
         position: absolute;
         font-size: 1.5em;
         color: rgb(8, 47, 33);
-        background-color: rgb(219, 225, 229);
+        background-color: transparent;
         top: 70px;
         right: 1rem;
         padding: 0;
@@ -473,3 +476,15 @@ footer {
         padding-top: 30px;
     }
 }   
+
+/*Ensuring that the nav is slightly transparent at all times on small screens*/
+@media (max-width: 747px) {
+    nav {
+      background-color: rgba(2, 20, 13,0.8) !important;
+      color: rgb(219, 225, 229) !important;
+    }
+  
+    nav a {
+      color: rgb(219, 225, 229) !important;
+    }
+  }
