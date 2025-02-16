@@ -164,7 +164,6 @@ nav li {
 
  #search-button, .search-button {
     cursor: pointer;
-    fill: rgb(2, 20, 13);
 
  }
 
@@ -376,18 +375,16 @@ footer {
     margin-bottom: 100px;
   }
   
-/*.hero-section {
-    position: relative;
-}
+
 
 .hero-section button {
-    position: absolute;
-    top: 300px;
-    right: 20px;
+   position: absolute;
+    top: 100px;
+    right: 70px;
     font-size: 1.5rem;
     max-width: 60%;
 
-}*/
+}
 
 /* Large screens */
   @media (min-width: 1025px) {
