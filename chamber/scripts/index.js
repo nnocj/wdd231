@@ -2,10 +2,16 @@ const url = 'https://nnocj.github.io/wdd231/chamber/data/members.json';
 const businessCards = document.querySelector('.business-cards');
 
 const displayFilteredMembers = (members)=> {
-    members.forEach((member) => {
 
+    // building the random aspect
+    const shuffledMembers = members.sort(()=> Math.random() - 0.5);
+    
+    shuffledMembers.forEach(member => {
         if (member.membership_level == 3){
+            let cardTrack = document.createElement('div');
             let card = document.createElement('section');
+            let nameEl = document.createElement('p');
+            let phone = document.createElement('p');
             let logo = document.createElement('img');
             let address = document.createElement('p');
             let link = document.createElement('p');
@@ -15,16 +21,20 @@ const displayFilteredMembers = (members)=> {
             logo.setAttribute('loading', 'lazy');
             address.textContent = member.address;
             link.textContent = member.website_url;
+            phone.textContent = member.phone_number;
+            nameEl.innerHTML = `<b>${member.name}</b>`;
+           
     
             card.appendChild(logo);
+            card.appendChild(nameEl);
             card.appendChild(address);
             card.appendChild(link);
             card.setAttribute('class', 'each-business');
-    
-            businessCards.appendChild(card);
+            cardTrack.setAttribute('class', 'card-track');
+            
+            cardTrack.appendChild(card);
+            businessCards.appendChild(cardTrack);
         }
-       
-    
     });
 }
 
@@ -33,6 +43,7 @@ async function getMembersData() {
     const data = await response.json();
     // console.table(data.prophets);
     displayFilteredMembers(data.members)
+    
 }
 
 getMembersData();
@@ -54,7 +65,7 @@ window.addEventListener(('scroll'), () => {
     if (window.scrollY > 1){
         header.style.backgroundColor = 'rgb(219, 225,  229)';
         header.style.color= 'rgb(2,20,13)';
-        logoText.style.color = 'rgb(2,20,13)';
+        /*logoText.style.color = 'rgb(2,20,13)';*/
         headNav.style.color = 'rgb(2,20,13)'; 
         
     }
@@ -66,3 +77,6 @@ window.addEventListener(('scroll'), () => {
         headNav.style.color = 'rgb(219,224,229)'; 
     }
 })
+
+
+

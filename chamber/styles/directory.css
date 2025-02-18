@@ -273,6 +273,34 @@ footer {
     font-size: medium;
     text-align: center;
 }
+footer {
+    text-align: center;
+    padding: 5px 20px;
+    background-color: rgb(219, 225, 229);
+    color: rgb(2, 20, 13);
+    max-width: 100%;
+    font-size: medium;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
+
+footer > div {
+    display: block;
+    align-self: center;
+    text-align: center;
+    justify-content: center;
+    justify-self: center;
+    padding: 10px;
+    
+}
+
+.social-media {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 40px;
+}
 
 .course-count {
     display: flex;
@@ -405,6 +433,10 @@ header, .page-profile, .vertical-align, .head-nav, .head-nav a, #search-button,
         display: block;
         align-items:start;
         padding-top: 30px;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
 }   
