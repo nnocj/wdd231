@@ -106,12 +106,12 @@ nav li {
    
 }
 
-#search-button-small-screen {
+#search-button{
         position: absolute;
-        font-size: 1.5em;
+        font-size: 1.25em;
         color: rgb(8, 47, 33);
         background-color: transparent;
-        top: 70px;
+        top: 40px;
         right: 1rem;
         padding: 0;
         border:none;
@@ -492,7 +492,7 @@ footer > div {
 
     nav {
         display: grid;  
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         align-self: self-end;
     }
     
@@ -514,10 +514,6 @@ footer > div {
     
     #menu {
         display:none; /*hide burger*/
-    }
-
-    #search-button-small-screen {
-        display: none;
     }
 
     /*To ensure that even when the user do not close the hamburger button,

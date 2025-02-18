@@ -56,33 +56,33 @@ function setBlockView() {
     document.querySelector(".member-cards").className = "member-cards block";
 }
 
-//when the page is scrolled down, the header should change to the settings I gave it.
-// But then when the page is up or not scrolled down, it should be transparent.
-window.addEventListener(('scroll'), () => {
-    let header = document.querySelector('header');
-    let logoText = document.querySelectorAll('#vertical-align');
-    let headNav = document.querySelector('#head-nav');
-    if (window.scrollY > 1){
-        header.style.backgroundColor = 'rgb(219, 225,  229)';
-        header.style.color= 'rgb(2,20,13)';
-        /*logoText.style.color = 'rgb(2,20,13)';*/
-        headNav.style.color = 'rgb(2,20,13)'; 
-        
-    }
 
-    else {
-        header.style.backgroundColor = 'transparent';
-        header.style.color = 'rgb(219,224,229)';
-        logoText.style.color = 'rgb(219,224,229)';
-        headNav.style.color = 'rgb(219,224,229)'; 
-    }
-})
+//when the light-dark button is clicked or toggled, the header should change
+// light mode and dark mode
+function toggleMode() {
+    const header = document.querySelector('.header');
+    const menu = document.querySelector('#menu');
+    const footer = document.querySelector('footer');
+    const body = document.querySelector('body');
+
+    // Toggle dark mode for header
+    header.classList.toggle('dark-mode');
+    menu.classList.toggle('dark-mode');
+    footer.classList.toggle('dark-mode');
+    body.classList.toggle('dark-mode-body');
+}
+
 
 //skip to main content
+document.getElementById("search-button-small-screen").addEventListener("click", function() {
+    document.querySelector(".business-cards").scrollIntoView({ behavior: "smooth" });
+});
+
 document.getElementById("search-button").addEventListener("click", function() {
     document.querySelector(".business-cards").scrollIntoView({ behavior: "smooth" });
 });
 
-
-
-
+//shrink and expand header by tap
+document.querySelector('header').addEventListener("hover", function (){
+    let header = document.querySelector('header');
+})

@@ -43,10 +43,6 @@ function setBlockView() {
 }
 
 //skip to main content
-document.getElementById("search-button-small-screen").addEventListener("click", function() {
-    document.querySelector(".members").scrollIntoView({ behavior: "smooth" });
-});
-
 document.getElementById("search-button").addEventListener("click", function() {
     document.querySelector(".members").scrollIntoView({ behavior: "smooth" });
 });

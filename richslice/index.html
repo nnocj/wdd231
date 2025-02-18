@@ -3,55 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Accra Chamber of Commerce - Directory Page</title>
-    <meta name="description" content="Accra Chamber of Commerce Directory Page">
+    <title> Rich Slice Foods - Home Page</title>
+    <meta name="description" content="Rich Slice Foods Home Page">
     <meta name="author" content="Nicholas Oblitey Commey">
-    <meta property="og:url"   content="https://nnocj.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url"   content="https://nnocj.github.io/wdd231/richslice/index.html">
     <meta property="og:type" content="website">
-    <meta property="og:title"  content="Student Course Page">
-    <meta property="og:description"  content="Accra Chamber of Commerce Directory Page">
-    <meta property="og:image"   content="https://nnocj.github.io/wdd231/images/accra.webp">
+    <meta property="og:title"  content="Home Page">
+    <meta property="og:description"  content="Rich Slice Foods Home Page">
+    <meta property="og:image"   content="https://nnocj.github.io/wdd231/richslice/images/semosa-1.png">
     <meta property="fb:app_id" content="1139284367865426">
-    <meta name = "twitter:card" content="Accra Chamber of Commerce Directory Page">
+    <meta name = "twitter:card" content="Rich Slice Foods Home Page">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="styles/index.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="https://nnocj.github.io/wdd231/richslice/images/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <script src="scripts/index.js" defer></script>
     <script src="../scripts/getdates.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
     <script src="../scripts/course.js" defer></script>
     
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="page-profile">
             <button type="button" id="menu" aria-label="Toggle navigation"></button>
-            <button id="search-button">🔍</button>
-            <img src="../images/accra.webp" alt="A Profile Picture" width="45" height="50">
+            <button id="light-dark" onclick="toggleMode()">🌗</button>
+            <img src="images/rich-slice.png" alt="A Profile Picture" width="50" height="50">
             <div id="vertical-align">
-                <h2 id="large-font">Accra</h2>
-                <p>Chamber of Commerce</p>
+                <h2 id="large-font">Rich Slice Foods</h2>
+                <p id="small-font">A Taste of Home and Abroad</p>
             </div>
         </div>
         <div id="animateme">
             <nav class="head-nav" id="head-nav">
                 <a href="#" class="active each-link">Home</a>
-                <a href="./directory.html" class="each-link" >Directory</a>
-                <a href="#" class="each-link">Join</a>
-                <a href="#" class="each-link">Discover</a>
+                <a href="#" class="each-link">Food</a>
+                <a href="#" class="each-link">Contact</a>
             </nav>  
         </div>
-        
-
     </header>
     <main>
         <section class="hero-section">
-            <img id="hero-image" src="images/home-hero.jpeg" alt="Area view of some part of accra in a fast pace">
-            <h1>Accra Chamber of Commerce - Directory Page</h1>
-        <button>Join Community</button>
+            <img id="hero-image" src="images/food-variety.jpg" alt="Area view of some part of accra in a fast pace" loading="lazy">
+            <h1>Rich Slice Bakery Page</h1>
+            <article>
+                <h2>Feel Home Wherever You Are</h2>
+                <p>Explore to eat the fruits and vegies you are missing to live your optimum!</p>
+                <button id="discover-call">Discover now</button>
+            </article>
+            <button id="newsletter">Signup for our newsletter</button>
         </section>
         
         <section class="info-cards">
