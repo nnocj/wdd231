@@ -438,7 +438,7 @@ footer > div {
     color: rgb(219, 225, 229);
 }
 
-#invisible-header {
+.invisible-header {
     display: none;
     visibility: hidden;
 }
