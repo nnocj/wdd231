@@ -124,6 +124,7 @@ onlyWdd.addEventListener('click', () => {
 // Displaying modal function
 function displayModal(course) {
     courseDetails.innerHTML = `
+
         <button id="closeModal">x</button>
         <h2>${course.subject}${course.number}</h2>
         <h3>${course.title}</h3>
