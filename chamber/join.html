@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Accra Chamber of Commerce - Directory Page</title>
-    <meta name="description" content="Accra Chamber of Commerce Directory Page">
+    <meta name="description" content="Accra Chamber of Commerce Join Page">
     <meta name="author" content="Nicholas Oblitey Commey">
     <meta property="og:url"   content="https://nnocj.github.io/wdd231/chamber/directory.html">
     <meta property="og:type" content="website">
     <meta property="og:title"  content="Student Course Page">
-    <meta property="og:description"  content="Accra Chamber of Commerce Directory Page">
+    <meta property="og:description"  content="Accra Chamber of Commerce Join Page">
     <meta property="og:image"   content="https://nnocj.github.io/wdd231/images/accra.webp">
     <meta property="fb:app_id" content="1139284367865426">
-    <meta name = "twitter:card" content="Accra Chamber of Commerce Directory Page">
+    <meta name = "twitter:card" content="Accra Chamber of Commerce Join Page">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="styles/index.css" rel="stylesheet">
+    <link href="styles/join.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" href="https://nnocj.github.io/wdd231/chamber/images/favicon1.ico">
@@ -38,9 +39,9 @@
         </div>
         <div id="animateme">
             <nav class="head-nav" id="head-nav">
-                <a href="#" class="active each-link">Home</a>
+                <a href="./index.html" class="each-link">Home</a>
                 <a href="./directory.html" class="each-link" >Directory</a>
-                <a href="./join.html" class="each-link">Join</a>
+                <a href="#" class="active each-link">Join</a>
                 <a href="#" class="each-link">Discover</a>
             </nav>  
         </div>
@@ -49,46 +50,40 @@
     </header>
     <main>
         <section class="hero-section">
-            <img id="hero-image" src="images/home-hero.jpeg" alt="Area view of some part of accra in a fast pace">
-            <h1>Accra Chamber of Commerce - Directory Page</h1>
-        <button>Join Community</button>
+            <img id="hero-image" src="images/join-hero.jpeg" alt="Area view of some part of accra in a fast pace">
+            <h1>Accra Chamber of Commerce - Join Page</h1>
         </section>
-        
-        <section class="info-cards">
-            <div>
-                <h2>Events</h2>
-                <section id="event-section">
-                    <h3 class="invisible-header">Header</h3>
-                    <div>
-                        <p><b>Ghana CEO Summit</b>, Venue: Kempinski Hotel Gold Coast City Accra</p>
-                        <p>Date: May 26, 2025</p>
-                    </div>
-                    <div>
-                        <p><b>Africa Real Estate Conference and Expo</b>, Venue: Kempinski Hotel Gold Coast City Accra</p>
-                        <p>Date: April 28-30, 2025</p>
-                    </div>
-                </section>
-            </div>
-            <div>
-                <h2>Current Weather</h2>
-                <section id="weather-content">
-                    <h3 class="invisible-header">Header</h3>
 
-                </section>
-            </div>
-            <div id="forecast">
-                <h2>Weather Forecast</h2>
-                <section id="forecast-content">
-                    <h3 class="invisible-header">Header</h3>
-
-                </section>
-            </div>
+        <form method="GET" action="thanks.html" class="page-form">
+          <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
+            <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+            <label>Organizational Title <input type="text" pattern="^[a-zA-Z\s-]{7,}$" name="last" required autocomplete="organization-title" title="Your Organizational Title"></label>
+            <label>Email <input type="email" name="email" required placeholder="john89@gmail.com"  title="Your Email" autocomplete="email"></label>
+            <label>Cell Phone <input type="tel" name="phone"  autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234" ></label>
+            <label>Business/Organization Name <input type="text" name="last" required autocomplete="organization" title="Your Business or Organization Name"></label>
+      
     
-        </section>
-        <section class="business-cards">
-            <h3 class="invisible-header">Header</h3>
-
-        </section>
+            <h3>Membership Level</h3>
+            <label><input type="radio" name="membership" value="NP" checked> NP Membership</label>
+            <label><input type="radio" name="membership" value="Bronze"> Bronze Membership</label>
+            <label><input type="radio" name="membership" value="Silver"> Silver Membership</label>
+            <label><input type="radio" name="membership" value="Gold"> Gold Membership</label>
+    
+            
+            <h3>Date and Location</h3>
+            <label>Date <input type="date" name="date" required></label>
+    
+            <label>Location
+              <select name="location" required>
+                <option value="">None</option>
+                <option value="Payson">Payson</option>
+                <option value="Orem">Orem</option>
+                <option value="Provo City Center">Provo City Center</option>
+            </label>
+    
+            <input type="submit" value="Schedule An Appointment">
+        </form>
+    
        
 
     
