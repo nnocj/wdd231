@@ -83,6 +83,9 @@ document.getElementById("search-button").addEventListener("click", function() {
     document.querySelector(".business-cards").scrollIntoView({ behavior: "smooth" });
 });
 
-
-
-
+//timestamp for the form submission
+document.addEventListener("DOMContentLoaded", () => {
+    const timestampFeild = document.getElementById("timestamp");
+    const currentDate = new Date();
+    timestampFeild.value = currentDate.toISOString();
+})
