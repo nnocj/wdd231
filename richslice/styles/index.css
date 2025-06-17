@@ -435,7 +435,7 @@ footer > div {
 .hero-section article {
     position:absolute;
     top: 25%;
-    left: 35px;
+    right: 35px;
     font-size: 1.5rem;
     max-width: 40%;
     z-index: 1;
@@ -464,7 +464,9 @@ footer > div {
     color: rgb(219, 225, 229);
 }
 .dark-mode-body {
-    background-color: rgb(230, 230, 230,0.1);
+    /*background-color: rgb(230, 230, 230,0.1);*/
+    background-color: rgb(2, 20, 13);
+    color: rgb(219, 225, 229);
   }
 .head-nav a {
     color: inherit; /* Inherits color from the parent */
