@@ -65,6 +65,15 @@ function toggleMode() {
     const footer = document.querySelector('footer');
     const body = document.querySelector('body');
 
+    if (document.querySelector('form')) {
+        
+        const form = document.querySelector('form');
+        const formLabels = form.querySelectorAll('label');
+        formLabels.forEach(label => {
+            label.classList.toggle('dark-mode');
+        });
+    }
+
     // Toggle dark mode for header
     header.classList.toggle('dark-mode');
     menu.classList.toggle('dark-mode');
@@ -85,4 +94,11 @@ document.getElementById("search-button").addEventListener("click", function() {
 //shrink and expand header by tap
 document.querySelector('header').addEventListener("hover", function (){
     let header = document.querySelector('header');
+})
+
+//timestamp for the form submission
+document.addEventListener("DOMContentLoaded", () => {
+    const timestampFeild = document.getElementById("timestamp");
+    const currentDate = new Date();
+    timestampFeild.value = currentDate.toISOString();
 })

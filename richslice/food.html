@@ -15,6 +15,7 @@
     <meta name = "twitter:card" content="Tastevar Foods Home Page">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="styles/index.css" rel="stylesheet">
+    <link href="styles/food.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" href="https://nnocj.github.io/wdd231/richslice/images/favicon.ico">
@@ -22,6 +23,7 @@
     <script src="scripts/index.js" defer></script>
     <script src="../scripts/getdates.js" defer></script>
     <script src="../scripts/course.js" defer></script>
+    <script src="./scripts/food.js" defer></script>
     
 </head>
 <body>
@@ -37,8 +39,8 @@
         </div>
         <div id="animateme">
             <nav class="head-nav" id="head-nav">
-                <a href="#" class="active each-link">Home</a>
-                <a href="./food.html" class="each-link">Food</a>
+                <a href="./index.html" class="each-link">Home</a>
+                <a href="#" class="active each-link">Food</a>
                 <a href="./contact.html" class="each-link">Contact</a>
             </nav>  
         </div>
@@ -53,40 +55,17 @@
             </article>
         </section>
         
-        <section class="info-cards">
-            <div>
-                <h2>Events</h2>
-                <section id="event-section">
-                    <h3 class="invisible-header">Header</h3>
-                    <div>
-                        <p><b>Ghana CEO Summit</b>, Venue: Kempinski Hotel Gold Coast City Accra</p>
-                        <p>Date: May 26, 2025</p>
-                    </div>
-                    <div>
-                        <p><b>Africa Real Estate Conference and Expo</b>, Venue: Kempinski Hotel Gold Coast City Accra</p>
-                        <p>Date: April 28-30, 2025</p>
-                    </div>
-                </section>
+        <section class="foods">
+            <h2>Explore Our Food Options</h2>
+            <div class="view-nav">
+              <button id="view-grid" onclick="setGridView()">⏹</button>
+              <button id="view-list" onclick="setBlockView()">📄</button>
             </div>
-            <div>
-                <h2>Current Weather</h2>
-                <section id="weather-content">
-                    <h3 class="invisible-header">Header</h3>
-
-                </section>
+            <div class="food-cards">
+               
             </div>
-            <div id="forecast">
-                <h2>Weather Forecast</h2>
-                <section id="forecast-content">
-                    <h3 class="invisible-header">Header</h3>
-
-                </section>
-            </div>
+           
     
-        </section>
-        <section class="business-cards">
-            <h3 class="invisible-header">Header</h3>
-
         </section>
        
 

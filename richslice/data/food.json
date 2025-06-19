@@ -1,0 +1,127 @@
+{
+    "foods": [
+
+      {
+        "name": " Jollof Rice",
+        "price": " ¢8.00",
+        "image_file_name": "https://nnocj.github.io/wdd231/chamber/images/total-logo.png",
+        "image_url": "../images/total-logo.png",
+        "rating": 4,
+        "key_ingredients": ""
+        },
+        {
+        "name": " Waakye",
+        "price": " ¢8.00",
+        "image_file_name": "https://nnocj.github.io/wdd231/chamber/images/total-logo.png",
+        "image_url": "../images/total-logo.png",
+        "rating": 3,
+        "key_ingredients": ""
+        },
+      {
+        "name": " Kenkey",
+        "price": " ¢8.00",
+        "image_file_name": "https://nnocj.github.io/wdd231/chamber/images/total-logo.png",
+        "image_url": "../images/total-logo.png",
+        "rating": 3,
+        "key_ingredients": ""
+        },
+       {
+        "name": " Eba",
+        "price": " ¢8.00",
+        "image_file_name": "https://nnocj.github.io/wdd231/chamber/images/total-logo.png",
+        "image_url": "../images/total-logo.png",
+        "rating": 3,
+        "key_ingredients": ""
+        },
+        {
+        "name": " Fufu",
+        "price": " ¢8.00",
+        "image_file_name": "https://nnocj.github.io/wdd231/chamber/images/total-logo.png",
+        "image_url": "../images/total-logo.png",
+        "rating": 3,
+        "key_ingredients": ""
+        },
+        {
+        "name": " Jollof Rice",
+        "price": " ¢8.00",
+        "image_file_name": "https://nnocj.github.io/wdd231/chamber/images/total-logo.png",
+        "image_url": "../images/total-logo.png",
+        "rating": 5,
+        "key_ingredients": ""
+        },
+        {
+        "name": " Waakye",
+        "price": " ¢8.00",
+        "image_file_name": "https://nnocj.github.io/wdd231/chamber/images/total-logo.png",
+        "image_url": "../images/total-logo.png",
+        "rating": 4,
+        "key_ingredients": ""
+        },
+        {
+        "name": " Fufu",
+        "price": " ¢8.00",
+        "image_file_name": "https://nnocj.github.io/wdd231/chamber/images/total-logo.png",
+        "image_url": "../images/total-logo.png",
+        "rating": 5,
+        "key_ingredients": ""
+        },
+      {
+        "name": " Jollof Rice",
+        "price": " ¢8.00",
+        "image_file_name": "https://nnocj.github.io/wdd231/chamber/images/total-logo.png",
+        "image_url": "../images/total-logo.png",
+        "rating": 5,
+        "key_ingredients": ""
+        },
+        {
+        "name": " Waakye",
+        "price": " ¢8.00",
+        "image_file_name": "https://nnocj.github.io/wdd231/chamber/images/total-logo.png",
+        "image_url": "../images/total-logo.png",
+        "rating": 3,
+        "key_ingredients": ""
+        },
+      {
+        "name": " Kenkey",
+        "price": " ¢8.00",
+        "image_file_name": "https://nnocj.github.io/wdd231/chamber/images/total-logo.png",
+        "image_url": "../images/total-logo.png",
+        "rating": 3,
+        "key_ingredients": ""
+        },
+       {
+        "name": " Eba",
+        "price": " ¢8.00",
+        "image_file_name": "https://nnocj.github.io/wdd231/chamber/images/total-logo.png",
+        "image_url": "../images/total-logo.png",
+        "rating": 4,
+        "key_ingredients": ""
+        },
+        {
+        "name": " Fufu",
+        "price": " ¢8.00",
+        "image_file_name": "https://nnocj.github.io/wdd231/chamber/images/total-logo.png",
+        "image_url": "../images/total-logo.png",
+        "rating": 3,
+        "key_ingredients": ""
+        },
+        {
+        "name": " Jollof Rice",
+        "price": " ¢8.00",
+        "image_file_name": "https://nnocj.github.io/wdd231/chamber/images/total-logo.png",
+        "image_url": "../images/total-logo.png",
+        "rating": 4,
+        "key_ingredients": ""
+        },
+        {
+        "name": " Waakye",
+        "price": " ¢8.00",
+        "image_file_name": "https://nnocj.github.io/wdd231/chamber/images/total-logo.png",
+        "image_url": "../images/total-logo.png",
+        "rating": 5,
+        "key_ingredients": ""
+        }
+        
+    ]
+}
+  
