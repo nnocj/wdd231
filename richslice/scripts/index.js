@@ -1,61 +1,46 @@
-const url = 'https://nnocj.github.io/wdd231/chamber/data/members.json';
-const businessCards = document.querySelector('.business-cards');
+const url = 'https://nnocj.github.io/wdd231/richslice/data/food.json';
+const cards = document.querySelector('.food-cards');
 
-const displayFilteredMembers = (members)=> {
+const displayFilteredFoods = (foods)=> {
 
     // building the random aspect
-    const shuffledMembers = members.sort(()=> Math.random() - 0.5);
+    const shuffledFoods = foods.sort(()=> Math.random() - 0.5);
     
-    shuffledMembers.forEach(member => {
-        if (member.membership_level == 3){
-            let cardTrack = document.createElement('div');
+    shuffledFoods.forEach(food => {
+        if (food.rating == 5){
             let card = document.createElement('section');
-            let nameEl = document.createElement('p');
-            let phone = document.createElement('p');
             let logo = document.createElement('img');
-            let address = document.createElement('p');
-            let link = document.createElement('p');
+            let name = document.createElement('p');
+            let price = document.createElement('p');
+            let keyIngredient = document.createElement('p');
             
-            logo.setAttribute('alt', `${member.name} logo`);
-            logo.setAttribute('src', member.image_file_name);
+            logo.setAttribute('alt', `${food.name} logo`);
+            logo.setAttribute('src', food.image_file_name);
             logo.setAttribute('loading', 'lazy');
-            address.textContent = member.address;
-            link.textContent = member.website_url;
-            phone.textContent = member.phone_number;
-            nameEl.innerHTML = `<b>${member.name}</b>`;
-           
-    
+            name.textContent = food.name;
+            price.textContent = food.price;
+            keyIngredient.textContent = food.key_ingredients;
+
             card.appendChild(logo);
-            card.appendChild(nameEl);
-            card.appendChild(address);
-            card.appendChild(link);
-            card.setAttribute('class', 'each-business');
-            cardTrack.setAttribute('class', 'card-track');
-            
-            cardTrack.appendChild(card);
-            businessCards.appendChild(cardTrack);
+            card.appendChild(name);
+            card.appendChild(price);
+            card.appendChild(keyIngredient);
+
+            cards.appendChild(card);
+        
         }
     });
 }
 
-async function getMembersData() {
+async function getFoodData() {
     const response = await fetch(url);
     const data = await response.json();
     // console.table(data.prophets);
-    displayFilteredMembers(data.members)
+    displayFilteredFoods(data.members)
     
 }
 
-getMembersData();
-
-function setGridView() {
-    document.querySelector(".member-cards").className = "member-cards grid";
-}
-
-function setBlockView() {
-    document.querySelector(".member-cards").className = "member-cards block";
-}
-
+getFoodsData();
 
 //when the light-dark button is clicked or toggled, the header should change
 // light mode and dark mode
@@ -81,15 +66,6 @@ function toggleMode() {
     body.classList.toggle('dark-mode-body');
 }
 
-
-//skip to main content
-document.getElementById("search-button-small-screen").addEventListener("click", function() {
-    document.querySelector(".business-cards").scrollIntoView({ behavior: "smooth" });
-});
-
-document.getElementById("search-button").addEventListener("click", function() {
-    document.querySelector(".business-cards").scrollIntoView({ behavior: "smooth" });
-});
 
 //shrink and expand header by tap
 document.querySelector('header').addEventListener("hover", function (){

@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Rich slice Foods Site Plan- Page</title>
+    <title> Rich slice Foods - Home Page</title>
     <meta name="description" content="Rich Slice Foods Home Page">
     <meta name="author" content="Nicholas Oblitey Commey">
     <meta property="og:url"   content="https://nnocj.github.io/wdd231/richslice/index.html">
     <meta property="og:type" content="website">
     <meta property="og:title"  content="Home Page">
-    <meta property="og:description"  content="Tastevar Foods Plan">
+    <meta property="og:description"  content="Tastevar Foods Home Page">
     <meta property="og:image"   content="https://nnocj.github.io/wdd231/richslice/images/semosa-1.png">
     <meta property="fb:app_id" content="1139284367865426">
-    <meta name = "twitter:card" content="Tastevar Foods Sit Plan">
+    <meta name = "twitter:card" content="Tastevar Foods Home Page">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="styles/index.css" rel="stylesheet">
-    <link href="styles/contact.css" rel="stylesheet">
+    <link href="styles/food.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" href="https://nnocj.github.io/wdd231/richslice/images/favicon.ico">
@@ -23,10 +23,11 @@
     <script src="scripts/index.js" defer></script>
     <script src="../scripts/getdates.js" defer></script>
     <script src="../scripts/course.js" defer></script>
+    <script src="./scripts/food.js" defer></script>
     
 </head>
 <body>
-     <header class="header">
+    <header class="header">
         <div class="page-profile">
             <button type="button" id="menu" aria-label="Toggle navigation"></button>
             <button id="light-dark" onclick="toggleMode()">🌗</button>
@@ -40,29 +41,31 @@
             <nav class="head-nav" id="head-nav">
                 <a href="./index.html" class="each-link">Home</a>
                 <a href="./food.html" class="each-link">Food</a>
-                <a href="./upcoming.html" class="each-link">Upcoming</a>
-                <a href="#" class="each-link active">Contact</a>
+                <a href="#" class="active each-link">Upcoming</a>
+                <a href="./contact.html" class="each-link">Contact</a>
             </nav>  
         </div>
     </header>
     <main>
         <section class="hero-section">
             <img id="hero-image" src="images/food-variety1.jpg" alt="A variety of food">
-            <h1>Rich Slice Foods - Contact Page</h1>
+            <h1>Rich Slice Foods - Upcoming Page</h1>
         </section>
-
-        <form method="GET" action="thankyou.html" class="page-form">
-          <label>Full Name <input type="text" name="full-name" required autocomplete="name" title="Your Full Name"></label>
-            <label>Email <input type="email" name="email" required placeholder="john89@gmail.com"  title="Your Email" autocomplete="email"></label>
-            <label>Cell Phone <input type="tel" name="phone"  autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234" ></label>
-            <label>Subject<input type="text" name="subject" required title="Message Subject"></label>
         
-            <h3>Message</h3>
-            <textarea name="message" required></textarea>
+        <section class="foods">
+            <h2>Explore Foods that will soom be on our menu </h2>
+            <div class="view-nav">
+              <button id="view-grid" onclick="setGridView()">⏹</button>
+              <button id="view-list" onclick="setBlockView()">📄</button>
+            </div>
+            <div class="food-cards">
+               
+            </div>
+           
+    
+        </section>
+       
 
-            <input type="hidden" name="timestamp" id="timestamp" value="timestamp">
-            <input type="submit" value="Send Message">
-        </form>
     
     </main>
     <footer>
