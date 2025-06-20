@@ -14,14 +14,13 @@
     <meta property="fb:app_id" content="1139284367865426">
     <meta name = "twitter:card" content="Accra Chamber of Commerce Directory Page">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link href="styles/index.css" rel="stylesheet">
+    <link href="styles/directory.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" href="https://nnocj.github.io/wdd231/chamber/images/favicon1.ico">
     <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-    <script src="scripts/index.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
     <script src="../scripts/getdates.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
     <script src="../scripts/course.js" defer></script>
     
 </head>
@@ -32,16 +31,16 @@
             <button id="search-button">🔍</button>
             <img src="../images/accra.webp" alt="A Profile Picture" width="45" height="50">
             <div id="vertical-align">
-                <h2 id="large-font">Accra</h2>
+                <p id="large-font">Accra</p>
                 <p>Chamber of Commerce</p>
             </div>
         </div>
         <div id="animateme">
             <nav class="head-nav" id="head-nav">
-                <a href="#" class="active each-link">Home</a>
-                <a href="./directory.html" class="each-link" >Directory</a>
-                <a href="./join.html" class="each-link">Join</a>
-                <a href="./discover.html" class="each-link">Discover</a>
+                <a href="./index.html">Home</a>
+                <a href="./directory.html">Directory</a>
+                <a href="./join.html">Join</a>
+                <a href="#" class="active">Discover</a>
             </nav>  
         </div>
         
@@ -49,45 +48,21 @@
     </header>
     <main>
         <section class="hero-section">
-            <img id="hero-image" src="images/home-hero.jpeg" alt="Area view of some part of accra in a fast pace">
-            <h1>Accra Chamber of Commerce - Directory Page</h1>
-        <button ><a href="./join.html">Join Community</a></button>
+            <img id="hero-image" src="images/directory-hero.webp" alt="Area view of some part of accra with two locators">
+            <h1>Accra Chamber of Commerce - Discover Page</h1>
         </section>
         
-        <section class="info-cards">
-            <div>
-                <h2>Events</h2>
-                <section id="event-section">
-                    <h3 class="invisible-header">Header</h3>
-                    <div>
-                        <p><b>Ghana CEO Summit</b>, Venue: Kempinski Hotel Gold Coast City Accra</p>
-                        <p>Date: May 26, 2025</p>
-                    </div>
-                    <div>
-                        <p><b>Africa Real Estate Conference and Expo</b>, Venue: Kempinski Hotel Gold Coast City Accra</p>
-                        <p>Date: April 28-30, 2025</p>
-                    </div>
-                </section>
+        <section class="members">
+            <h2>Learn More About some Spotlights in Accra</h2>
+            <div class="view-nav">
+              <button id="view-grid" onclick="setGridView()">⏹</button>
+              <button id="view-list" onclick="setBlockView()">📄</button>
             </div>
-            <div>
-                <h2>Current Weather</h2>
-                <section id="weather-content">
-                    <h3 class="invisible-header">Header</h3>
-
-                </section>
+            <div class="member-cards">
+               
             </div>
-            <div id="forecast">
-                <h2>Weather Forecast</h2>
-                <section id="forecast-content">
-                    <h3 class="invisible-header">Header</h3>
-
-                </section>
-            </div>
+           
     
-        </section>
-        <section class="business-cards">
-            <h3 class="invisible-header">Header</h3>
-
         </section>
        
 
