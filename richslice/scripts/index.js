@@ -31,7 +31,7 @@ const displayFilteredFoods = (foods)=> {
     });
 }
 
-async function getFoodData() {
+async function getFoodsData() {
     const url = 'https://nnocj.github.io/wdd231/richslice/data/food.json';
     const response = await fetch(url);
     const data = await response.json();
