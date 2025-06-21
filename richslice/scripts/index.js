@@ -1,5 +1,3 @@
-const url = 'https://nnocj.github.io/wdd231/richslice/data/food.json';
-const cards = document.querySelector('.food-cards');
 
 const displayFilteredFoods = (foods)=> {
 
@@ -25,6 +23,7 @@ const displayFilteredFoods = (foods)=> {
             card.appendChild(name);
             card.appendChild(price);
             card.appendChild(keyIngredient);
+            const cards = document.querySelector('.food-cards');
 
             cards.appendChild(card);
         
@@ -33,6 +32,7 @@ const displayFilteredFoods = (foods)=> {
 }
 
 async function getFoodData() {
+    const url = 'https://nnocj.github.io/wdd231/richslice/data/food.json';
     const response = await fetch(url);
     const data = await response.json();
     // console.table(data.prophets);
