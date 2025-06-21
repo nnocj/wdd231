@@ -574,3 +574,18 @@ footer > div {
     }
 }   
 
+
+@media (max-width: 490px){
+    .hero-section article {
+        position: absolute;
+        top: 100px;
+        right:10px;
+
+    }
+}
+
+@media (max-width: 380px){
+    .hero-section article {
+        display: none;
+    }
+}
