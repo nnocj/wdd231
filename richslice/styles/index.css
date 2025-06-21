@@ -427,9 +427,14 @@ footer > div {
 
 }
 
-.hero-section button:hover{
-    background-color:rgb(38, 92, 129);
-    color: rgb(219, 225, 229);
+.hero-section a:hover{
+    color: rgb(250, 210, 7);
+    background-color: rgb(2, 12, 18)
+}
+
+.hero-section a {
+    background-color: rgb(2, 12, 18);
+    color: rgb(255, 255, 255);
 }
 
 .hero-section article {
