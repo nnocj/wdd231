@@ -6,7 +6,6 @@ const displayFoods = (foods)=> {
         let name = document.createElement('p');
         let price = document.createElement('p');
         let keyIngredient = document.createElement('p');
-        let foodDetails = document.createElement('p');
         
         logo.setAttribute('alt', `${food.name} logo`);
         logo.setAttribute('src', food.image_file_name);
@@ -32,6 +31,7 @@ const displayFoods = (foods)=> {
 
 // Displaying modal function
 function displayModal(food) {
+    const foodDetails = document.querySelector('#food-details');
     foodDetails.innerHTML = `
 
         <button id="closeModal">x</button>
