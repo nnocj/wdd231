@@ -15,6 +15,7 @@
     <meta name = "twitter:card" content="Tastevar Foods Home Page">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="styles/index.css" rel="stylesheet">
+    <link href="styles/food.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" href="https://nnocj.github.io/wdd231/richslice/images/favicon.ico">
@@ -22,6 +23,7 @@
     <script src="scripts/index.js" defer></script>
     <script src="../scripts/getdates.js" defer></script>
     <script src="../scripts/course.js" defer></script>
+    <script src="../scripts/weather.js" defer></script>
     
 </head>
 <body>
@@ -39,7 +41,7 @@
             <nav class="head-nav" id="head-nav">
                 <a href="#" class="active each-link">Home</a>
                 <a href="./food.html" class="each-link">Food</a>
-                <a href="./upcoming.html" class="each-link">Upcoming</a>
+                <a href="./coming-soon.html" class="each-link">Coming Soon</a>
                 <a href="./contact.html" class="each-link">Contact</a>
             </nav>  
         </div>
@@ -50,7 +52,7 @@
             <h1>Rich Slice Foods Page</h1>
             <article>
                 <h2>Feel Home Wherever You Are</h2>
-                <button id="discover-call">Discover now</button>
+                <a href="./food.html" id="discover-call">Discover now</a>
             </article>
         </section>
         
@@ -73,19 +75,20 @@
                 <h2>Current Weather</h2>
                 <section id="weather-content">
                     <h3 class="invisible-header">Header</h3>
+                    
 
                 </section>
             </div>
             <div id="forecast">
                 <h2>Weather Forecast</h2>
                 <section id="forecast-content">
-                    <h3 class="invisible-header">Header</h3>
+                    
 
                 </section>
             </div>
     
         </section>
-        <section class="food-cards">
+        <section class="food-cards index-food">
             <h3 class="invisible-header">Header</h3>
 
         </section>

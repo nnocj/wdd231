@@ -131,3 +131,17 @@
     display: block;
 }
 
+/* This is for the index page */
+@media screen and (max-width: 768px) {
+    .index-food {
+        display: grid;
+        grid-template-columns: 1fr; /* Single column on small screens */
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .index-food {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    }
+}

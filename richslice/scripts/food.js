@@ -6,6 +6,7 @@ const displayFoods = (foods)=> {
         let name = document.createElement('p');
         let price = document.createElement('p');
         let keyIngredient = document.createElement('p');
+        let foodDetails = document.createElement('p');
         
         logo.setAttribute('alt', `${food.name} logo`);
         logo.setAttribute('src', food.image_file_name);
@@ -13,14 +14,41 @@ const displayFoods = (foods)=> {
         name.textContent = food.name;
         price.textContent = food.price;
         keyIngredient.textContent = food.key_ingredients;
-
+        
         card.appendChild(logo);
         card.appendChild(name);
         card.appendChild(price);
         card.appendChild(keyIngredient);
+
+        //adding modals for details about the food
+        card.addEventListener("click", () => {
+            displayModal(food);
+        });
         const cards = document.querySelector('.food-cards');
         cards.appendChild(card);
     
+    });
+}
+
+// Displaying modal function
+function displayModal(food) {
+    foodDetails.innerHTML = `
+
+        <button id="closeModal">x</button>
+        <h2>${food.name}${food.price}</h2>
+        <h3>Origin: ${food.origin}</h3>
+        <p><strong>Description</strong>: ${food.description}</p>
+    `;
+
+    foodDetails.showModal();
+
+    // Close modal button event listener
+    document.querySelector('#closeModal').addEventListener("click", () => {
+        foodDetails.classList.add("closing");
+        setTimeout(() => {
+            foodDetails.close();
+            foodDetails.classList.remove("closing");
+        }, 350);
     });
 }
 
