@@ -36,7 +36,7 @@ async function getFoodsData() {
     const response = await fetch(url);
     const data = await response.json();
     // console.table(data.prophets);
-    displayFilteredFoods(data.members)
+    displayFilteredFoods(data.foods)
     
 }
 
@@ -75,6 +75,9 @@ document.querySelector('header').addEventListener("hover", function (){
 //timestamp for the form submission
 document.addEventListener("DOMContentLoaded", () => {
     const timestampFeild = document.getElementById("timestamp");
-    const currentDate = new Date();
-    timestampFeild.value = currentDate.toISOString();
+    if (timestampFeild) {
+        const currentDate = new Date();
+        timestampFeild.value = currentDate.toISOString();
+    }
+
 })
