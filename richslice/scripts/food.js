@@ -1,7 +1,4 @@
 
-const cards = document.querySelector('.food-cards');
-
-
 const displayFoods = (foods)=> {
     foods.forEach((food) => {
         let card = document.createElement('section');
@@ -21,7 +18,7 @@ const displayFoods = (foods)=> {
         card.appendChild(name);
         card.appendChild(price);
         card.appendChild(keyIngredient);
-
+        const cards = document.querySelector('.food-cards');
         cards.appendChild(card);
     
     });

@@ -2,124 +2,68 @@
     "foods": [
 
       {
-        "name": " Jollof Rice",
+        "name": " Samosa",
         "price": " ¢8.00",
-        "image_file_name": "https://nnocj.github.io/wdd231/chamber/images/total-logo.png",
-        "image_url": "../images/total-logo.png",
+        "image_file_name": "https://nnocj.github.io/wdd231/richslice/images/samosa.webp",
+        "image_url": "../images/samosa.webp",
         "rating": 4,
-        "key_ingredients": ""
+        "key_ingredients": "Meat, Potatoes, Spices"
         },
         {
         "name": " Waakye",
-        "price": " ¢8.00",
-        "image_file_name": "https://nnocj.github.io/wdd231/chamber/images/total-logo.png",
-        "image_url": "../images/total-logo.png",
-        "rating": 3,
+        "price": " ¢25.00",
+        "image_file_name": "https://nnocj.github.io/wdd231/richslice/images/waakye.jpg",
+        "image_url": "../images/waakye.jpg",
+        "rating": 5,
         "key_ingredients": ""
         },
       {
         "name": " Kenkey",
-        "price": " ¢8.00",
-        "image_file_name": "https://nnocj.github.io/wdd231/chamber/images/total-logo.png",
-        "image_url": "../images/total-logo.png",
+        "price": " ¢16.00",
+        "image_file_name": "https://nnocj.github.io/wdd231/richslice/images/kenkey.webp",
+        "image_url": "../images/kenkey.webp",
         "rating": 3,
-        "key_ingredients": ""
+        "key_ingredients": "Corn, fish, pepper sauce"
         },
        {
-        "name": " Eba",
-        "price": " ¢8.00",
-        "image_file_name": "https://nnocj.github.io/wdd231/chamber/images/total-logo.png",
-        "image_url": "../images/total-logo.png",
-        "rating": 3,
-        "key_ingredients": ""
+        "name": " Pounded Yam with Egusi Soup",
+        "price": " ¢25.00",
+        "image_file_name": "https://nnocj.github.io/wdd231/richslice/images/yam-egusi.jpg",
+        "image_url": "../images/yam-egusi.jpg",
+        "rating": 4,
+        "key_ingredients": "Yam, Egusi seeds, vegetables"
         },
         {
         "name": " Fufu",
-        "price": " ¢8.00",
-        "image_file_name": "https://nnocj.github.io/wdd231/chamber/images/total-logo.png",
-        "image_url": "../images/total-logo.png",
+        "price": " ¢35.00",
+        "image_file_name": "https://nnocj.github.io/wdd231/richslice/images/fufu.webp",
+        "image_url": "../images/fufu.webp",
         "rating": 3,
-        "key_ingredients": ""
+        "key_ingredients": "Cassava, plantain, palm juice"
         },
         {
         "name": " Jollof Rice",
-        "price": " ¢8.00",
-        "image_file_name": "https://nnocj.github.io/wdd231/chamber/images/total-logo.png",
-        "image_url": "../images/total-logo.png",
+        "price": " ¢30.00",
+        "image_file_name": "https://nnocj.github.io/wdd231/richslice/images/jollof.jpeg",
+        "image_url": "../images/jollof.jpeg",
         "rating": 5,
-        "key_ingredients": ""
+        "key_ingredients": "Rice, tomatoes, spices, vegetables, meat"
         },
         {
-        "name": " Waakye",
-        "price": " ¢8.00",
-        "image_file_name": "https://nnocj.github.io/wdd231/chamber/images/total-logo.png",
-        "image_url": "../images/total-logo.png",
+        "name": " Chakalaka (Soweto chilli)",
+        "price": " ¢18.00",
+        "image_file_name": "https://nnocj.github.io/wdd231/chamber/richslice/soweto-chilli.webp",
+        "image_url": "../images/soweto-chilli.webp",
         "rating": 4,
-        "key_ingredients": ""
+        "key_ingredients": "beans, tomatoes, onions, peppers, spices"
         },
         {
-        "name": " Fufu",
-        "price": " ¢8.00",
-        "image_file_name": "https://nnocj.github.io/wdd231/chamber/images/total-logo.png",
-        "image_url": "../images/total-logo.png",
+        "name": " Cauliflower Soup",
+        "price": " ¢40.00",
+        "image_file_name": "https://nnocj.github.io/wdd231/richslice/images/cauliflower-soup.webp",
+        "image_url": "../images/cauliflower-soup.webp",
         "rating": 5,
-        "key_ingredients": ""
-        },
-      {
-        "name": " Jollof Rice",
-        "price": " ¢8.00",
-        "image_file_name": "https://nnocj.github.io/wdd231/chamber/images/total-logo.png",
-        "image_url": "../images/total-logo.png",
-        "rating": 5,
-        "key_ingredients": ""
-        },
-        {
-        "name": " Waakye",
-        "price": " ¢8.00",
-        "image_file_name": "https://nnocj.github.io/wdd231/chamber/images/total-logo.png",
-        "image_url": "../images/total-logo.png",
-        "rating": 3,
-        "key_ingredients": ""
-        },
-      {
-        "name": " Kenkey",
-        "price": " ¢8.00",
-        "image_file_name": "https://nnocj.github.io/wdd231/chamber/images/total-logo.png",
-        "image_url": "../images/total-logo.png",
-        "rating": 3,
-        "key_ingredients": ""
-        },
-       {
-        "name": " Eba",
-        "price": " ¢8.00",
-        "image_file_name": "https://nnocj.github.io/wdd231/chamber/images/total-logo.png",
-        "image_url": "../images/total-logo.png",
-        "rating": 4,
-        "key_ingredients": ""
-        },
-        {
-        "name": " Fufu",
-        "price": " ¢8.00",
-        "image_file_name": "https://nnocj.github.io/wdd231/chamber/images/total-logo.png",
-        "image_url": "../images/total-logo.png",
-        "rating": 3,
-        "key_ingredients": ""
-        },
-        {
-        "name": " Jollof Rice",
-        "price": " ¢8.00",
-        "image_file_name": "https://nnocj.github.io/wdd231/chamber/images/total-logo.png",
-        "image_url": "../images/total-logo.png",
-        "rating": 4,
-        "key_ingredients": ""
-        },
-        {
-        "name": " Waakye",
-        "price": " ¢8.00",
-        "image_file_name": "https://nnocj.github.io/wdd231/chamber/images/total-logo.png",
-        "image_url": "../images/total-logo.png",
-        "rating": 5,
-        "key_ingredients": ""
+        "key_ingredients": "Cauliflower, onions, garlic, spices"
         }
         
     ]
