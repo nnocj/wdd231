@@ -202,7 +202,7 @@ header, .page-profile, .vertical-align, .head-nav, .head-nav a, #light-dark,
     column-gap: 20px;
 }
 
-.member-cards {
+.food-cards {
     border-top: 1px solid rgb(207, 221, 232);
     /*display: block;*/
     /*justify-self: center;*/ 
@@ -252,7 +252,7 @@ section h2 {
     
 }
 
-.business-cards section {
+/*.food-cards section {
     display: block;
     flex-wrap: wrap;
     flex-direction: column;
@@ -263,7 +263,7 @@ section h2 {
     box-shadow: 5px 5px 10px gray;
     padding:10px;
 
-}
+}*/
 
 section img {
     width:100px;
