@@ -1,4 +1,4 @@
-const foodUrl = 'https://nnocj.github.io/wdd231/richslice/data/foods.json';
+const foodUrl = 'https://nnocj.github.io/wdd231/richslice/data/food.json';
 const foodContainer = document.querySelector('.food-cards');
 const dialog = document.getElementById('food-dialog');
 const dialogContent = document.querySelector('.dialog-content');
@@ -49,6 +49,7 @@ const displayFoods = (foods) => {
             `;
             dialog.showModal();
             document.getElementById('close-dialog').addEventListener('click', () => dialog.close());
+           
         });
 
         foodContainer.appendChild(card);
@@ -62,3 +63,5 @@ async function getFoodData() {
 }
 
 getFoodData();
+
+

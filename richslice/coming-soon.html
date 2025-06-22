@@ -23,7 +23,7 @@
     <script src="scripts/index.js" defer></script>
     <script src="../scripts/getdates.js" defer></script>
     <script src="../scripts/course.js" defer></script>
-    <script src="./scripts/food.js" defer></script>
+    <script src="scripts/food.js" defer></script>
     
 </head>
 <body>
@@ -58,11 +58,15 @@
               <button id="view-grid" onclick="setGridView()">⏹</button>
               <button id="view-list" onclick="setBlockView()">📄</button>
             </div>
-            <div class="food-cards">
-               
-            </div>
-           
-    
+            <p>Discover a wide range of delicious foods that will soon be available at Rich Slice Foods. From savory dishes to sweet treats, we have something for everyone.</p>
+        </section>
+        <section>
+            <div class="food-cards grid"></div>
+
+            <!-- Dialog -->
+            <dialog id="food-dialog">
+                <div class="dialog-content"></div>
+            </dialog>
         </section>
        
 
