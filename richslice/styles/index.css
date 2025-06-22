@@ -600,3 +600,30 @@ footer > div {
         display: none;
     }
 }
+
+/* index page mission only */
+.mission-section {
+    background-color: #fff8f0;
+    padding: 3rem 1.5rem;
+    border-top: 5px solid #d35400;
+    border-bottom: 5px solid #d35400;
+    text-align: center;
+}
+
+.mission-content {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #333;
+}
+
+.mission-section h2 {
+    font-size: 2rem;
+    color: #d35400;
+    margin-bottom: 1rem;
+}
+
+.mission-section p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
