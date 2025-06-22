@@ -49,6 +49,7 @@ function toggleMode() {
     const menu = document.querySelector('#menu');
     const footer = document.querySelector('footer');
     const body = document.querySelector('body');
+    const cardh2 = document.querySelectorAll('.food-card h2');
 
     if (document.querySelector('form')) {
         
@@ -64,6 +65,9 @@ function toggleMode() {
     menu.classList.toggle('dark-mode');
     footer.classList.toggle('dark-mode');
     body.classList.toggle('dark-mode-body');
+    cardh2.forEach(h2 => {
+        h2.classList.toggle('dark-mode-card-h2');
+    });
 }
 
 

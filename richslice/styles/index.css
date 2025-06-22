@@ -468,6 +468,12 @@ footer > div {
     background-color: rgb(2, 20, 13, 0.97);
     color: rgb(219, 225, 229);
 }
+
+.dark-mode-card-h2 {
+    background-color: rgb(2, 20, 13);
+    color:gold;
+    
+}
 .dark-mode-body {
     /*background-color: rgb(230, 230, 230,0.1);*/
     background-color: rgb(2, 20, 13);
