@@ -57,7 +57,7 @@ const displayFoods = (foods) => {
 };
 
 //display selected foods
-const displaySelectedFoods = (foods) => {
+/*const displaySelectedFoods = (foods) => {
     foods.forEach((food) => {
         if (food.rating === 3){
             const card = document.createElement('section');
@@ -102,7 +102,7 @@ if (selectedFoodContainer){
     const response = await fetch(foodUrl);
     const data = await response.json();
     displaySelectedFoods(data.foods);
-}
+}*/
 
 async function getFoodData() {
     const response = await fetch(foodUrl);
