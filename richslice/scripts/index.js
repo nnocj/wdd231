@@ -1,5 +1,5 @@
 
-const displayFilteredFoods = (foods)=> {
+/*const displayFilteredFoods = (foods)=> {
 
     // building the random aspect
     const shuffledFoods = foods.sort(()=> Math.random() - 0.5);
@@ -40,7 +40,7 @@ async function getFoodsData() {
     
 }
 
-getFoodsData();
+getFoodsData();*/
 
 //when the light-dark button is clicked or toggled, the header should change
 // light mode and dark mode
