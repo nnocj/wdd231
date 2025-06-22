@@ -13,7 +13,7 @@ const displayPlaces = (places) => {
         const button = document.createElement('a');
 
         title.textContent = place.name;
-        img.setAttribute('src', place.image_url);
+        img.setAttribute('src', place.image);
         img.setAttribute('alt', `Image of ${place.name}`);
         img.setAttribute('loading', 'lazy');
         img.classList.add('place-image');
