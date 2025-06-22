@@ -38,7 +38,7 @@
 }
 
 @media (min-width: 641px) {
-    .place-image:hover {
+    .place-image:hover {/* Here is where I ensure hover effect on larger screens */
         transform: scale(1.05);
         box-shadow: 0 0 10px rgba(0,0,0,0.3);
     }
