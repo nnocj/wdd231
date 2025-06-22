@@ -15,7 +15,7 @@ const displayPlaces = (places) => {
         title.textContent = place.name;
         img.setAttribute('src', place.image);
         img.setAttribute('alt', `Image of ${place.name}`);
-        img.setAttribute('loading', 'lazy');
+        img.setAttribute('loading', 'lazy');// Here is the lazy loading attribute
         img.classList.add('place-image');
 
         figure.appendChild(img);
