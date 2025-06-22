@@ -56,6 +56,54 @@ const displayFoods = (foods) => {
     });
 };
 
+//display selected foods
+const displaySelectedFoods = (foods) => {
+    foods.forEach((food) => {
+        if (food.rating === 3){
+            const card = document.createElement('section');
+            card.classList.add('food-card');
+
+            const title = document.createElement('h2');
+            title.textContent = food.name.trim();
+
+            const figure = document.createElement('figure');
+            const img = document.createElement('img');
+            img.src = food.image_file_name;
+            img.alt = `Image of ${food.name}`;
+            img.loading = 'lazy';
+            img.classList.add('food-img');
+
+            figure.appendChild(img);
+
+            const price = document.createElement('p');
+            price.innerHTML = `<strong>Price:</strong> ${food.price || food[" price"]}`;
+
+            const origin = document.createElement('p');
+            origin.innerHTML = `<strong>Origin:</strong> ${food.origin || food.Origin}`;
+
+            const description = document.createElement('p');
+            description.textContent = food.description?.replace(/:$/, '') || "No description available.";
+
+            card.appendChild(title);
+            card.appendChild(figure);
+            card.appendChild(price);
+            card.appendChild(origin);
+            card.appendChild(description);
+
+            selectedFoodContainer.appendChild(card);
+        }
+    });
+};
+
+const selectedFoodContainer = document.querySelector('.selected-foods');
+
+if (selectedFoodContainer){
+    const foodUrl = 'https://nnocj.github.io/wdd231/richslice/data/food.json';
+    const response = await fetch(foodUrl);
+    const data = await response.json();
+    displaySelectedFoods(data.foods);
+}
+
 async function getFoodData() {
     const response = await fetch(foodUrl);
     const data = await response.json();
