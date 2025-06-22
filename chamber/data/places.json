@@ -1,0 +1,68 @@
+{
+  "places": [
+    {
+      "name": "Aburi Botanical Gardens",
+      "address": "Aburi, Eastern Region, Ghana",
+      "description": "A historic botanical garden established in 1890, known for its lush greenery, rare plant species, and peaceful walking paths.",
+      "wikipedia": "https://en.wikipedia.org/wiki/Aburi_Botanical_Gardens",
+      "image_url": "../images/aburi-gardens.webp",
+      "image": "https://nnocj.github.io/chamber/images/aburi-gardens.webp"
+    },
+    {
+      "name": "Accra Art Centre",
+      "address": "28th February Road, Accra, Ghana",
+      "description": "A vibrant cultural market offering traditional crafts, textiles, artwork, and performances representing Ghanaian heritage.",
+      "wikipedia": "https://artscenterghana.com",
+      "image_url": "../images/accra-art-centre.webp",
+      "image": "https://nnocj.github.io/chamber/images/accra-art-centre.webp"
+    },
+    {
+      "name": "Accra Mall",
+      "address": "Tetteh Quarshie Interchange, Spintex Road, Accra, Ghana",
+      "description": "One of Ghana’s premier shopping centers, featuring retail stores, restaurants, a cinema, and modern amenities.",
+      "wikipedia": "https://en.wikipedia.org/wiki/Accra_Mall",
+      "image_url": "../images/accra-mall.webp",
+      "image": "https://nnocj.github.io/chamber/images/accra-mall.webp"
+    },
+    {
+      "name": "Accra Zoo",
+      "address": "Achimota Forest, Accra, Ghana",
+      "description": "A wildlife sanctuary in the Achimota Forest, housing native species and promoting conservation education.",
+      "wikipedia": "https://en.wikipedia.org/wiki/Achimota-Forest",
+      "image_url": "../images/accra-zoo.webp",
+      "image": "https://nnocj.github.io/chamber/images/accra-zoo.webp"
+    },
+    {
+      "name": "Kwame Nkrumah Park",
+      "address": "High Street, Accra Central, Accra, Ghana",
+      "description": "A memorial park dedicated to Ghana’s first president, featuring his mausoleum, museum, and historical artifacts.",
+      "wikipedia": "https://en.wikipedia.org/wiki/Kwame_Nkrumah_Memorial_Park",
+      "image_url": "../images/kwame-nkrumah-park.webp",
+      "image": "https://nnocj.github.io/chamber/images/kwame-nkrumah-park.webp"
+    },
+    {
+      "name": "Labadi Beach",
+      "address": "La, Accra, Greater Accra Region, Ghana",
+      "description": "One of Accra’s most popular beaches, known for its lively atmosphere, horse riding, and live music events.",
+      "wikipedia": "https://en.wikipedia.org/wiki/Labadi_Beach",
+      "image_url": "../images/labadi-beach.webp",
+      "image": "https://nnocj.github.io/chamber/images/labadi-beach.webp"
+    },
+    {
+      "name": "Makola Market",
+      "address": "Kojo Thompson Road, Accra Central, Accra, Ghana",
+      "description": "A bustling open-air market and commercial hub in Accra, famous for textiles, food items, and household goods.",
+      "wikipedia": "https://en.wikipedia.org/wiki/Makola_Market",
+      "image_url": "../images/makola-market.webp",
+      "image": "https://nnocj.github.io/chamber/images/makola-market.webp"
+    },
+    {
+      "name": "Osu Castle",
+      "address": "Castle Drive, Osu, Accra, Ghana",
+      "description": "A 17th-century fort and former seat of government, rich in colonial history and architectural significance.",
+      "wikipedia": "https://en.wikipedia.org/wiki/Osu_Castle",
+      "image_url": "../images/osu-castle.webp",
+      "image": "https://nnocj.github.io/chamber/images/osu-castle.webp"
+    }
+  ]
+}

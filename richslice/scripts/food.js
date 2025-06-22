@@ -54,11 +54,22 @@ function displayModal(food) {
 
 
 async function getFoodsData() {
-    const url = 'https://nnocj.github.io/wdd231/richslice/data/food.json';
-    const response = await fetch(url);
-    const data = await response.json();
-    // console.table(data.prophets);
-    displayFoods(data.foods)
+    try {
+        const url = 'https://nnocj.github.io/wdd231/richslice/data/food.json';
+        const response = await fetch(url);
+        if (response.ok){
+            const data = await response.json();
+            displayFoods(data.foods);
+        }
+        else {
+            throw Error(await response.text());
+        }
+    }
+    catch (error) {
+        console.log("Error fetching forecast:", error);
+    }
+    
+
 }
 
 getFoodsData();
