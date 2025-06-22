@@ -65,3 +65,8 @@ async function getFoodData() {
 getFoodData();
 
 
+document.addEventListener('click', (e) => {
+    if (dialog.open) {
+        dialog.close();
+    }
+});
