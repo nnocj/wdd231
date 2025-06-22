@@ -83,3 +83,24 @@ function displayVisitMessage() {
 
 displayVisitMessage();
 
+//when the page is scrolled down, the header should change to the settings I gave it.
+// But then when the page is up or not scrolled down, it should be transparent.
+window.addEventListener(('scroll'), () => {
+    let header = document.querySelector('header');
+    let logoText = document.querySelectorAll('#vertical-align');
+    let headNav = document.querySelector('#head-nav');
+    if (window.scrollY > 1){
+        header.style.backgroundColor = 'rgb(219, 225,  229)';
+        header.style.color= 'rgb(2,20,13)';
+        /*logoText.style.color = 'rgb(2,20,13)';*/
+        headNav.style.color = 'rgb(2,20,13)'; 
+        
+    }
+
+    else {
+        header.style.backgroundColor = 'transparent';
+        header.style.color = 'rgb(219,224,229)';
+        logoText.style.color = 'rgb(219,224,229)';
+        headNav.style.color = 'rgb(219,224,229)'; 
+    }
+})
